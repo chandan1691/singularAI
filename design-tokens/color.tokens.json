@@ -1,0 +1,464 @@
+{
+  "$schema": "https://schemas.w3.org/2024/design-tokens/1.0",
+  "color": {
+    "semantic": {
+      "light": {
+        "background": {
+          "$value": "#ffffff",
+          "$type": "color",
+          "$description": "Main background color (light mode)"
+        },
+        "foreground": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Main foreground/text color (light mode)"
+        },
+        "card": {
+          "$value": "#ffffff",
+          "$type": "color",
+          "$description": "Card background color (light mode)"
+        },
+        "cardForeground": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Card text color (light mode)"
+        },
+        "popover": {
+          "$value": "oklch(1 0 0)",
+          "$type": "color",
+          "$description": "Popover background (light mode)"
+        },
+        "popoverForeground": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Popover text (light mode)"
+        },
+        "primary": {
+          "$value": "#030213",
+          "$type": "color",
+          "$description": "Primary brand color (light mode)"
+        },
+        "primaryForeground": {
+          "$value": "oklch(1 0 0)",
+          "$type": "color",
+          "$description": "Text on primary color (light mode)"
+        },
+        "secondary": {
+          "$value": "oklch(0.95 0.0058 264.53)",
+          "$type": "color",
+          "$description": "Secondary color (light mode)"
+        },
+        "secondaryForeground": {
+          "$value": "#030213",
+          "$type": "color",
+          "$description": "Text on secondary color (light mode)"
+        },
+        "muted": {
+          "$value": "#ececf0",
+          "$type": "color",
+          "$description": "Muted background (light mode)"
+        },
+        "mutedForeground": {
+          "$value": "#717182",
+          "$type": "color",
+          "$description": "Muted text color (light mode)"
+        },
+        "accent": {
+          "$value": "#e9ebef",
+          "$type": "color",
+          "$description": "Accent background (light mode)"
+        },
+        "accentForeground": {
+          "$value": "#030213",
+          "$type": "color",
+          "$description": "Text on accent (light mode)"
+        },
+        "destructive": {
+          "$value": "#d4183d",
+          "$type": "color",
+          "$description": "Destructive/error color (light mode)"
+        },
+        "destructiveForeground": {
+          "$value": "#ffffff",
+          "$type": "color",
+          "$description": "Text on destructive color (light mode)"
+        },
+        "border": {
+          "$value": "rgba(0, 0, 0, 0.1)",
+          "$type": "color",
+          "$description": "Border color (light mode)"
+        },
+        "input": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Input border color (light mode)"
+        },
+        "inputBackground": {
+          "$value": "#f3f3f5",
+          "$type": "color",
+          "$description": "Input background color (light mode)"
+        },
+        "switchBackground": {
+          "$value": "#cbced4",
+          "$type": "color",
+          "$description": "Switch background color (light mode)"
+        },
+        "ring": {
+          "$value": "oklch(0.708 0 0)",
+          "$type": "color",
+          "$description": "Focus ring color (light mode)"
+        }
+      },
+      "dark": {
+        "background": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Main background color (dark mode)"
+        },
+        "foreground": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Main foreground/text color (dark mode)"
+        },
+        "card": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Card background color (dark mode)"
+        },
+        "cardForeground": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Card text color (dark mode)"
+        },
+        "popover": {
+          "$value": "oklch(0.145 0 0)",
+          "$type": "color",
+          "$description": "Popover background (dark mode)"
+        },
+        "popoverForeground": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Popover text (dark mode)"
+        },
+        "primary": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Primary brand color (dark mode)"
+        },
+        "primaryForeground": {
+          "$value": "oklch(0.205 0 0)",
+          "$type": "color",
+          "$description": "Text on primary color (dark mode)"
+        },
+        "secondary": {
+          "$value": "oklch(0.269 0 0)",
+          "$type": "color",
+          "$description": "Secondary color (dark mode)"
+        },
+        "secondaryForeground": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Text on secondary color (dark mode)"
+        },
+        "muted": {
+          "$value": "oklch(0.269 0 0)",
+          "$type": "color",
+          "$description": "Muted background (dark mode)"
+        },
+        "mutedForeground": {
+          "$value": "oklch(0.708 0 0)",
+          "$type": "color",
+          "$description": "Muted text color (dark mode)"
+        },
+        "accent": {
+          "$value": "oklch(0.269 0 0)",
+          "$type": "color",
+          "$description": "Accent background (dark mode)"
+        },
+        "accentForeground": {
+          "$value": "oklch(0.985 0 0)",
+          "$type": "color",
+          "$description": "Text on accent (dark mode)"
+        },
+        "destructive": {
+          "$value": "oklch(0.396 0.141 25.723)",
+          "$type": "color",
+          "$description": "Destructive/error color (dark mode)"
+        },
+        "destructiveForeground": {
+          "$value": "oklch(0.637 0.237 25.331)",
+          "$type": "color",
+          "$description": "Text on destructive color (dark mode)"
+        },
+        "border": {
+          "$value": "oklch(0.269 0 0)",
+          "$type": "color",
+          "$description": "Border color (dark mode)"
+        },
+        "input": {
+          "$value": "oklch(0.269 0 0)",
+          "$type": "color",
+          "$description": "Input border color (dark mode)"
+        },
+        "ring": {
+          "$value": "oklch(0.439 0 0)",
+          "$type": "color",
+          "$description": "Focus ring color (dark mode)"
+        }
+      },
+      "sidebar": {
+        "light": {
+          "background": {
+            "$value": "oklch(0.985 0 0)",
+            "$type": "color",
+            "$description": "Sidebar background (light mode)"
+          },
+          "foreground": {
+            "$value": "oklch(0.145 0 0)",
+            "$type": "color",
+            "$description": "Sidebar text (light mode)"
+          },
+          "primary": {
+            "$value": "#030213",
+            "$type": "color",
+            "$description": "Sidebar primary color (light mode)"
+          },
+          "primaryForeground": {
+            "$value": "oklch(0.985 0 0)",
+            "$type": "color",
+            "$description": "Text on sidebar primary (light mode)"
+          },
+          "accent": {
+            "$value": "oklch(0.97 0 0)",
+            "$type": "color",
+            "$description": "Sidebar accent (light mode)"
+          },
+          "accentForeground": {
+            "$value": "oklch(0.205 0 0)",
+            "$type": "color",
+            "$description": "Text on sidebar accent (light mode)"
+          },
+          "border": {
+            "$value": "oklch(0.922 0 0)",
+            "$type": "color",
+            "$description": "Sidebar border (light mode)"
+          },
+          "ring": {
+            "$value": "oklch(0.708 0 0)",
+            "$type": "color",
+            "$description": "Sidebar focus ring (light mode)"
+          }
+        },
+        "dark": {
+          "background": {
+            "$value": "oklch(0.205 0 0)",
+            "$type": "color",
+            "$description": "Sidebar background (dark mode)"
+          },
+          "foreground": {
+            "$value": "oklch(0.985 0 0)",
+            "$type": "color",
+            "$description": "Sidebar text (dark mode)"
+          },
+          "primary": {
+            "$value": "oklch(0.488 0.243 264.376)",
+            "$type": "color",
+            "$description": "Sidebar primary color (dark mode)"
+          },
+          "primaryForeground": {
+            "$value": "oklch(0.985 0 0)",
+            "$type": "color",
+            "$description": "Text on sidebar primary (dark mode)"
+          },
+          "accent": {
+            "$value": "oklch(0.269 0 0)",
+            "$type": "color",
+            "$description": "Sidebar accent (dark mode)"
+          },
+          "accentForeground": {
+            "$value": "oklch(0.985 0 0)",
+            "$type": "color",
+            "$description": "Text on sidebar accent (dark mode)"
+          },
+          "border": {
+            "$value": "oklch(0.269 0 0)",
+            "$type": "color",
+            "$description": "Sidebar border (dark mode)"
+          },
+          "ring": {
+            "$value": "oklch(0.439 0 0)",
+            "$type": "color",
+            "$description": "Sidebar focus ring (dark mode)"
+          }
+        }
+      },
+      "chart": {
+        "1": {
+          "$value": "oklch(0.646 0.222 41.116)",
+          "$type": "color",
+          "$description": "Chart color 1 (light mode)"
+        },
+        "2": {
+          "$value": "oklch(0.6 0.118 184.704)",
+          "$type": "color",
+          "$description": "Chart color 2 (light mode)"
+        },
+        "3": {
+          "$value": "oklch(0.398 0.07 227.392)",
+          "$type": "color",
+          "$description": "Chart color 3 (light mode)"
+        },
+        "4": {
+          "$value": "oklch(0.828 0.189 84.429)",
+          "$type": "color",
+          "$description": "Chart color 4 (light mode)"
+        },
+        "5": {
+          "$value": "oklch(0.769 0.188 70.08)",
+          "$type": "color",
+          "$description": "Chart color 5 (light mode)"
+        },
+        "dark": {
+          "1": {
+            "$value": "oklch(0.488 0.243 264.376)",
+            "$type": "color",
+            "$description": "Chart color 1 (dark mode)"
+          },
+          "2": {
+            "$value": "oklch(0.696 0.17 162.48)",
+            "$type": "color",
+            "$description": "Chart color 2 (dark mode)"
+          },
+          "3": {
+            "$value": "oklch(0.769 0.188 70.08)",
+            "$type": "color",
+            "$description": "Chart color 3 (dark mode)"
+          },
+          "4": {
+            "$value": "oklch(0.627 0.265 303.9)",
+            "$type": "color",
+            "$description": "Chart color 4 (dark mode)"
+          },
+          "5": {
+            "$value": "oklch(0.645 0.246 16.439)",
+            "$type": "color",
+            "$description": "Chart color 5 (dark mode)"
+          }
+        }
+      }
+    },
+    "palette": {
+      "red": {
+        "50": { "$value": "oklch(.971 .013 17.38)", "$type": "color" },
+        "100": { "$value": "oklch(.936 .032 17.717)", "$type": "color" },
+        "200": { "$value": "oklch(.885 .062 18.334)", "$type": "color" },
+        "300": { "$value": "oklch(.808 .114 19.571)", "$type": "color" },
+        "400": { "$value": "oklch(.704 .191 22.216)", "$type": "color" },
+        "500": { "$value": "oklch(.637 .237 25.331)", "$type": "color" },
+        "600": { "$value": "oklch(.577 .245 27.325)", "$type": "color" },
+        "700": { "$value": "oklch(.505 .213 27.518)", "$type": "color" },
+        "800": { "$value": "oklch(.444 .177 26.899)", "$type": "color" }
+      },
+      "orange": {
+        "50": { "$value": "oklch(.98 .016 73.684)", "$type": "color" },
+        "100": { "$value": "oklch(.954 .038 75.164)", "$type": "color" },
+        "200": { "$value": "oklch(.901 .076 70.697)", "$type": "color" },
+        "300": { "$value": "oklch(.837 .128 66.29)", "$type": "color" },
+        "400": { "$value": "oklch(.75 .183 55.934)", "$type": "color" },
+        "600": { "$value": "oklch(.646 .222 41.116)", "$type": "color" },
+        "700": { "$value": "oklch(.553 .195 38.402)", "$type": "color" },
+        "800": { "$value": "oklch(.47 .157 37.304)", "$type": "color" }
+      },
+      "amber": {
+        "50": { "$value": "oklch(.987 .022 95.277)", "$type": "color" },
+        "100": { "$value": "oklch(.962 .059 95.617)", "$type": "color" },
+        "200": { "$value": "oklch(.924 .12 95.746)", "$type": "color" },
+        "300": { "$value": "oklch(.879 .169 91.605)", "$type": "color" },
+        "400": { "$value": "oklch(.828 .189 84.429)", "$type": "color" },
+        "600": { "$value": "oklch(.666 .179 58.318)", "$type": "color" },
+        "700": { "$value": "oklch(.555 .163 48.998)", "$type": "color" },
+        "800": { "$value": "oklch(.473 .137 46.201)", "$type": "color" },
+        "900": { "$value": "oklch(.414 .112 45.904)", "$type": "color" },
+        "950": { "$value": "oklch(.279 .077 45.635)", "$type": "color" }
+      },
+      "yellow": {
+        "400": { "$value": "oklch(.852 .199 91.936)", "$type": "color" }
+      },
+      "green": {
+        "50": { "$value": "oklch(.982 .018 155.826)", "$type": "color" },
+        "100": { "$value": "oklch(.962 .044 156.743)", "$type": "color" },
+        "200": { "$value": "oklch(.925 .084 155.995)", "$type": "color" },
+        "300": { "$value": "oklch(.871 .15 154.449)", "$type": "color" },
+        "400": { "$value": "oklch(.792 .209 151.711)", "$type": "color" },
+        "600": { "$value": "oklch(.627 .194 149.214)", "$type": "color" },
+        "700": { "$value": "oklch(.527 .154 150.069)", "$type": "color" },
+        "800": { "$value": "oklch(.448 .119 151.328)", "$type": "color" }
+      },
+      "cyan": {
+        "50": { "$value": "oklch(.984 .019 200.873)", "$type": "color" },
+        "400": { "$value": "oklch(.789 .154 211.53)", "$type": "color" }
+      },
+      "sky": {
+        "300": { "$value": "oklch(.828 .111 230.318)", "$type": "color" }
+      },
+      "blue": {
+        "50": { "$value": "oklch(.97 .014 254.604)", "$type": "color" },
+        "100": { "$value": "oklch(.932 .032 255.585)", "$type": "color" },
+        "200": { "$value": "oklch(.882 .059 254.128)", "$type": "color" },
+        "300": { "$value": "oklch(.809 .105 251.813)", "$type": "color" },
+        "400": { "$value": "oklch(.707 .165 254.624)", "$type": "color" },
+        "500": { "$value": "oklch(.623 .214 259.815)", "$type": "color" },
+        "600": { "$value": "oklch(.546 .245 262.881)", "$type": "color" },
+        "700": { "$value": "oklch(.488 .243 264.376)", "$type": "color" },
+        "800": { "$value": "oklch(.424 .199 265.638)", "$type": "color" }
+      },
+      "indigo": {
+        "100": { "$value": "oklch(.93 .034 272.788)", "$type": "color" }
+      },
+      "purple": {
+        "400": { "$value": "oklch(.714 .203 305.504)", "$type": "color" },
+        "500": { "$value": "oklch(.627 .265 303.9)", "$type": "color" }
+      },
+      "rose": {
+        "50": { "$value": "oklch(.969 .015 12.422)", "$type": "color" },
+        "100": { "$value": "oklch(.941 .03 12.58)", "$type": "color" },
+        "600": { "$value": "oklch(.586 .253 17.585)", "$type": "color" },
+        "900": { "$value": "oklch(.41 .159 10.272)", "$type": "color" }
+      },
+      "gray": {
+        "50": { "$value": "oklch(.985 .002 247.839)", "$type": "color" },
+        "100": { "$value": "oklch(.967 .003 264.542)", "$type": "color" },
+        "200": { "$value": "oklch(.928 .006 264.531)", "$type": "color" },
+        "300": { "$value": "oklch(.872 .01 258.338)", "$type": "color" },
+        "400": { "$value": "oklch(.707 .022 261.325)", "$type": "color" },
+        "500": { "$value": "oklch(.551 .027 264.364)", "$type": "color" },
+        "600": { "$value": "oklch(.446 .03 256.802)", "$type": "color" },
+        "700": { "$value": "oklch(.373 .034 259.733)", "$type": "color" },
+        "800": { "$value": "oklch(.278 .033 256.848)", "$type": "color" },
+        "900": { "$value": "oklch(.21 .034 264.665)", "$type": "color" }
+      },
+      "white": {
+        "$value": "#fff",
+        "$type": "color"
+      }
+    },
+    "gradient": {
+      "positiveGreen": {
+        "$value": "linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)",
+        "$type": "gradient",
+        "$description": "Positive green gradient for high confidence tags"
+      },
+      "mediumConfidence": {
+        "$value": "linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)",
+        "$type": "gradient",
+        "$description": "Orange gradient for medium confidence tags"
+      },
+      "lowConfidence": {
+        "$value": "linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)",
+        "$type": "gradient",
+        "$description": "Pink gradient for low confidence tags"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://schemas.w3.org/2024/design-tokens/1.0",
+  "spacing": {
+    "base": {
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "Base spacing unit (4px at 16px base)"
+    },
+    "scale": {
+      "0": {
+        "$value": "0",
+        "$type": "dimension",
+        "$description": "No spacing"
+      },
+      "0.5": {
+        "$value": "0.125rem",
+        "$type": "dimension",
+        "$description": "2px spacing"
+      },
+      "1": {
+        "$value": "0.25rem",
+        "$type": "dimension",
+        "$description": "4px spacing (1x base)"
+      },
+      "1.5": {
+        "$value": "0.375rem",
+        "$type": "dimension",
+        "$description": "6px spacing"
+      },
+      "2": {
+        "$value": "0.5rem",
+        "$type": "dimension",
+        "$description": "8px spacing (2x base)"
+      },
+      "2.5": {
+        "$value": "0.625rem",
+        "$type": "dimension",
+        "$description": "10px spacing"
+      },
+      "3": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "12px spacing (3x base)"
+      },
+      "3.5": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$description": "14px spacing"
+      },
+      "4": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "16px spacing (4x base)"
+      },
+      "5": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$description": "20px spacing (5x base)"
+      },
+      "6": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$description": "24px spacing (6x base)"
+      },
+      "8": {
+        "$value": "2rem",
+        "$type": "dimension",
+        "$description": "32px spacing (8x base)"
+      },
+      "9": {
+        "$value": "2.25rem",
+        "$type": "dimension",
+        "$description": "36px spacing (9x base)"
+      },
+      "10": {
+        "$value": "2.5rem",
+        "$type": "dimension",
+        "$description": "40px spacing (10x base)"
+      },
+      "11": {
+        "$value": "2.75rem",
+        "$type": "dimension",
+        "$description": "44px spacing (11x base)"
+      },
+      "12": {
+        "$value": "3rem",
+        "$type": "dimension",
+        "$description": "48px spacing (12x base)"
+      },
+      "14": {
+        "$value": "3.5rem",
+        "$type": "dimension",
+        "$description": "56px spacing (14x base)"
+      },
+      "16": {
+        "$value": "4rem",
+        "$type": "dimension",
+        "$description": "64px spacing (16x base)"
+      },
+      "20": {
+        "$value": "5rem",
+        "$type": "dimension",
+        "$description": "80px spacing (20x base)"
+      },
+      "24": {
+        "$value": "6rem",
+        "$type": "dimension",
+        "$description": "96px spacing (24x base)"
+      }
+    },
+    "container": {
+      "xs": {
+        "$value": "20rem",
+        "$type": "dimension",
+        "$description": "Extra small container width (320px)"
+      },
+      "sm": {
+        "$value": "24rem",
+        "$type": "dimension",
+        "$description": "Small container width (384px)"
+      },
+      "md": {
+        "$value": "28rem",
+        "$type": "dimension",
+        "$description": "Medium container width (448px)"
+      },
+      "lg": {
+        "$value": "32rem",
+        "$type": "dimension",
+        "$description": "Large container width (512px)"
+      },
+      "xl": {
+        "$value": "36rem",
+        "$type": "dimension",
+        "$description": "Extra large container width (576px)"
+      },
+      "2xl": {
+        "$value": "42rem",
+        "$type": "dimension",
+        "$description": "2X large container width (672px)"
+      },
+      "5xl": {
+        "$value": "64rem",
+        "$type": "dimension",
+        "$description": "5X large container width (1024px)"
+      }
+    },
+    "gap": {
+      "0.5": {
+        "$value": "0.125rem",
+        "$type": "dimension",
+        "$description": "2px gap"
+      },
+      "1": {
+        "$value": "0.25rem",
+        "$type": "dimension",
+        "$description": "4px gap"
+      },
+      "1.5": {
+        "$value": "0.375rem",
+        "$type": "dimension",
+        "$description": "6px gap"
+      },
+      "2": {
+        "$value": "0.5rem",
+        "$type": "dimension",
+        "$description": "8px gap"
+      },
+      "3": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "12px gap"
+      },
+      "4": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "16px gap"
+      },
+      "6": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$description": "24px gap"
+      },
+      "8": {
+        "$value": "2rem",
+        "$type": "dimension",
+        "$description": "32px gap"
+      }
+    },
+    "padding": {
+      "xs": {
+        "$value": "0.25rem",
+        "$type": "dimension",
+        "$description": "Extra small padding (4px)"
+      },
+      "sm": {
+        "$value": "0.5rem",
+        "$type": "dimension",
+        "$description": "Small padding (8px)"
+      },
+      "md": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$description": "Medium padding (12px)"
+      },
+      "lg": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "Large padding (16px)"
+      },
+      "xl": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$description": "Extra large padding (24px)"
+      },
+      "2xl": {
+        "$value": "2rem",
+        "$type": "dimension",
+        "$description": "2X large padding (32px)"
+      },
+      "3xl": {
+        "$value": "3rem",
+        "$type": "dimension",
+        "$description": "3X large padding (48px)"
+      }
+    }
+  }
+}
+

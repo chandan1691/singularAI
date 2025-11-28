@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.w3.org/2024/design-tokens/1.0",
+  "radius": {
+    "base": {
+      "$value": "0.625rem",
+      "$type": "dimension",
+      "$description": "Base border radius (10px at 16px base)"
+    },
+    "none": {
+      "$value": "0",
+      "$type": "dimension",
+      "$description": "No border radius (sharp corners)"
+    },
+    "sm": {
+      "$value": "calc(0.625rem - 4px)",
+      "$type": "dimension",
+      "$description": "Small radius (6px) - base minus 4px"
+    },
+    "md": {
+      "$value": "calc(0.625rem - 2px)",
+      "$type": "dimension",
+      "$description": "Medium radius (8px) - base minus 2px"
+    },
+    "lg": {
+      "$value": "0.625rem",
+      "$type": "dimension",
+      "$description": "Large radius (10px) - same as base"
+    },
+    "xl": {
+      "$value": "calc(0.625rem + 4px)",
+      "$type": "dimension",
+      "$description": "Extra large radius (14px) - base plus 4px"
+    },
+    "2xl": {
+      "$value": "1rem",
+      "$type": "dimension",
+      "$description": "2X large radius (16px)"
+    },
+    "3xl": {
+      "$value": "1.5rem",
+      "$type": "dimension",
+      "$description": "3X large radius (24px)"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension",
+      "$description": "Fully rounded (pill shape)"
+    },
+    "custom": {
+      "12px": {
+        "$value": "12px",
+        "$type": "dimension",
+        "$description": "Custom 12px radius"
+      }
+    }
+  }
+}
+
