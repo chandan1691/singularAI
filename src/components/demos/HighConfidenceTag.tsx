@@ -62,7 +62,7 @@ export function HighConfidenceTag() {
           </div>
 
           {/* Small Size */}
-          <div>
+          <div className="mb-8">
             <p className="text-muted-foreground mb-3">Small</p>
             <div className="flex items-center gap-2 flex-wrap">
               <span 
@@ -81,6 +81,91 @@ export function HighConfidenceTag() {
               
               <span 
                 className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+              >
+                <CheckCircle2 className="w-3 h-3" />
+                <span className="text-xs">94%</span>
+              </span>
+            </div>
+          </div>
+
+          {/* Filled Variation */}
+          <div>
+            <p className="text-muted-foreground mb-3">Filled</p>
+            <div className="flex items-center gap-4 flex-wrap">
+              {/* Large Filled */}
+              <span 
+                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                High Confidence (94%)
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                High Confidence
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                94%
+              </span>
+            </div>
+            
+            {/* Medium Filled */}
+            <div className="flex items-center gap-3 flex-wrap mt-4">
+              <span 
+                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                High Confidence (94%)
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                High Confidence
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                94%
+              </span>
+            </div>
+            
+            {/* Small Filled */}
+            <div className="flex items-center gap-2 flex-wrap mt-4">
+              <span 
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3 h-3" />
+                <span className="text-xs">High Confidence (94%)</span>
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3 h-3" />
+                <span className="text-xs">High Confidence</span>
+              </span>
+              
+              <span 
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
               >
                 <CheckCircle2 className="w-3 h-3" />
                 <span className="text-xs">94%</span>
@@ -225,6 +310,57 @@ export function HighConfidenceTag() {
             </div>
             <p className="text-foreground">Bienvenido a nuestra plataforma</p>
           </div>
+        </div>
+      </div>
+
+      {/* Example 5: Filled Variation - Dashboard Cards */}
+      <div className="bg-card rounded-lg border border-border p-6">
+        <div className="mb-3">
+          <h4 className="text-foreground">Example 5: Filled Variation (Dashboard Cards)</h4>
+        </div>
+        <div className="space-y-3">
+          <div className="p-4 bg-muted rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-foreground font-medium">AI Analysis Complete</span>
+              <span 
+                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                94%
+              </span>
+            </div>
+            <p className="text-muted-foreground text-sm">Document classification completed with high confidence</p>
+          </div>
+          <div className="p-4 bg-muted rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-foreground font-medium">Search Results</span>
+              <span 
+                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                96%
+              </span>
+            </div>
+            <p className="text-muted-foreground text-sm">Top result matches your query with high relevance</p>
+          </div>
+          <div className="p-4 bg-muted rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-foreground font-medium">Sentiment Score</span>
+              <span 
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-white"
+                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+              >
+                <CheckCircle2 className="w-3 h-3" />
+                <span className="text-xs">Positive</span>
+              </span>
+            </div>
+            <p className="text-muted-foreground text-sm">Text analysis indicates positive sentiment</p>
+          </div>
+        </div>
+        <div className="text-xs text-muted-foreground bg-muted p-3 rounded-md mt-4">
+          <strong>Note:</strong> The filled variation uses white text on the green gradient background for enhanced visibility and emphasis.
         </div>
       </div>
     </div>
