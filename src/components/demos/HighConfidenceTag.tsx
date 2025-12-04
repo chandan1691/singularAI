@@ -94,24 +94,33 @@ export function HighConfidenceTag() {
             <div className="flex items-center gap-4 flex-wrap">
               {/* Large Filled */}
               <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-4 h-4" />
                 High Confidence (94%)
               </span>
               
               <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-4 h-4" />
                 High Confidence
               </span>
               
               <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-4 h-4" />
                 94%
@@ -121,24 +130,33 @@ export function HighConfidenceTag() {
             {/* Medium Filled */}
             <div className="flex items-center gap-3 flex-wrap mt-4">
               <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 High Confidence (94%)
               </span>
               
               <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 High Confidence
               </span>
               
               <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 94%
@@ -148,24 +166,33 @@ export function HighConfidenceTag() {
             {/* Small Filled */}
             <div className="flex items-center gap-2 flex-wrap mt-4">
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3 h-3" />
                 <span className="text-xs">High Confidence (94%)</span>
               </span>
               
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3 h-3" />
                 <span className="text-xs">High Confidence</span>
               </span>
               
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3 h-3" />
                 <span className="text-xs">94%</span>
@@ -323,8 +350,11 @@ export function HighConfidenceTag() {
             <div className="flex items-center justify-between mb-2">
               <span className="text-foreground font-medium">AI Analysis Complete</span>
               <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-4 h-4" />
                 94%
@@ -336,8 +366,11 @@ export function HighConfidenceTag() {
             <div className="flex items-center justify-between mb-2">
               <span className="text-foreground font-medium">Search Results</span>
               <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 96%
@@ -349,8 +382,11 @@ export function HighConfidenceTag() {
             <div className="flex items-center justify-between mb-2">
               <span className="text-foreground font-medium">Sentiment Score</span>
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-950"
-                style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}
+                className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-green-950"
+                style={{ 
+                  background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+                  border: '1px solid rgba(5, 223, 114, 0.5)'
+                }}
               >
                 <CheckCircle2 className="w-3 h-3" />
                 <span className="text-xs">Positive</span>

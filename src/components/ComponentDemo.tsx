@@ -86,33 +86,72 @@ export function ComponentDemo({ componentName, useCase, tab = 'design' }: Compon
 export function HighConfidenceTag() {
   return (
     <div className="space-y-6">
-      {/* Large Size */}
+      {/* Outlined Variation - Large */}
       <div className="flex items-center gap-4">
         <span 
-          className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-800 border border-green-400/50"
-          style={{ background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)' }}
+          className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
         >
           <CheckCircle2 className="w-4 h-4" />
           High Confidence (94%)
         </span>
       </div>
 
-      {/* Medium Size */}
+      {/* Outlined Variation - Medium */}
       <div className="flex items-center gap-3">
         <span 
-          className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-800 border border-green-400/50"
-          style={{ background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)' }}
+          className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
         >
           <CheckCircle2 className="w-3.5 h-3.5" />
           High Confidence (94%)
         </span>
       </div>
 
-      {/* Small Size */}
+      {/* Outlined Variation - Small */}
       <div className="flex items-center gap-2">
         <span 
-          className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-800 border border-green-400/50"
-          style={{ background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)' }}
+          className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+        >
+          <CheckCircle2 className="w-3 h-3" />
+          <span className="text-xs">High Confidence (94%)</span>
+        </span>
+      </div>
+
+      {/* Filled Variation - Large */}
+      <div className="flex items-center gap-4">
+        <span 
+          className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-green-950"
+          style={{ 
+            background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+            border: '1px solid rgba(5, 223, 114, 0.5)'
+          }}
+        >
+          <CheckCircle2 className="w-4 h-4" />
+          High Confidence (94%)
+        </span>
+      </div>
+
+      {/* Filled Variation - Medium */}
+      <div className="flex items-center gap-3">
+        <span 
+          className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-green-950"
+          style={{ 
+            background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+            border: '1px solid rgba(5, 223, 114, 0.5)'
+          }}
+        >
+          <CheckCircle2 className="w-3.5 h-3.5" />
+          High Confidence (94%)
+        </span>
+      </div>
+
+      {/* Filled Variation - Small */}
+      <div className="flex items-center gap-2">
+        <span 
+          className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-green-950"
+          style={{ 
+            background: 'linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+            border: '1px solid rgba(5, 223, 114, 0.5)'
+          }}
         >
           <CheckCircle2 className="w-3 h-3" />
           <span className="text-xs">High Confidence (94%)</span>
@@ -627,13 +666,15 @@ export function InlineHighlight() {
             'Large - Height: ~40px, Padding: 12px (py-3 px-3), Icon: 16px (w-4 h-4)',
             'Medium - Height: ~32px, Padding: 8px (py-2 px-2), Icon: 14px (w-3.5 h-3.5)',
             'Small - Height: ~28px, Padding: 4px (py-1 px-1), Icon: 12px (w-3 h-3)',
-            'Border radius: 9999px (fully rounded pill shape)'
+            'Border radius: 100px (fully rounded pill shape)',
+            'Filled variation uses same padding values as outlined variation for each size'
           ],
           spacing: [
             'Large - Gap between icon and text: 8px (gap-2)',
             'Medium - Gap between icon and text: 6px (gap-1.5)',
             'Small - Gap between icon and text: 4px (gap-1)',
-            'Horizontal spacing between tags: 8px - 16px'
+            'Horizontal spacing between tags: 8px - 16px',
+            'Filled variation uses same gap values as outlined variation for each size'
           ],
           typography: [
             'Font: Inter',
@@ -643,14 +684,20 @@ export function InlineHighlight() {
             'Line height: 1.5'
           ],
           colors: [
-            'Background: rgba(187, 247, 208, 0.6) - bg-green-200/60',
-            'Text: #15803d - text-green-700',
-            'Border: rgba(187, 247, 208, 0.5) - border-green-300/50',
-            'Icon: Same as text color'
+            'Outlined Variation:',
+            '  - Background: rgba(187, 247, 208, 0.6) - bg-positive-green',
+            '  - Text: #15803d - text-green-900',
+            '  - Border: rgba(187, 247, 208, 0.5) - border-green-400/50',
+            'Filled Variation:',
+            '  - Background: linear-gradient(93.54deg, #56EA9B 0.05%, #9CF3BD 99.99%)',
+            '  - Text: text-green-950 (WCAG 2.0 AA compliant, minimum 4.5:1 contrast ratio)',
+            '  - Border: 1px solid rgba(5, 223, 114, 0.5)',
+            'Icon: Same as text color for both variations'
           ],
           states: [
-            'Default: Green background with green text and icon',
-            'All states use soft pastel backgrounds with 60% opacity for a gentle appearance',
+            'Outlined: Green background with green text and icon',
+            'Filled: Green gradient background with dark green text (WCAG compliant) and border',
+            'All states use consistent padding and spacing matching outlined variation',
             'Horizontal layout with consistent spacing between variants'
           ]
         };

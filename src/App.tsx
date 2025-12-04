@@ -325,6 +325,7 @@ export default function App() {
                           <p className="text-gray-600"><strong>Large Size:</strong> Use for prominent displays, hero sections, or primary AI results where confidence is a key decision factor.</p>
                           <p className="text-gray-600"><strong>Medium Size:</strong> Use for list items, search results, or secondary information displays where space is moderate.</p>
                           <p className="text-gray-600"><strong>Small Size:</strong> Use for inline tags, compact tables, dense data displays, or when showing multiple confidence indicators together.</p>
+                          <p className="text-gray-600"><strong>Filled Variation:</strong> Use for enhanced visibility and emphasis, especially in dashboard cards, status indicators, or when you need a more prominent visual presence. The filled variation uses a gradient background with dark text (text-green-950) to ensure WCAG 2.0 AA accessibility compliance.</p>
                         </div>
                       )}
                       {selectedVariant.name === 'Medium confidence tag' && (
@@ -362,6 +363,9 @@ export default function App() {
                             <li>Maintain consistent color coding: Green for high confidence, Blue for medium, Orange for low</li>
                             <li>Always include an icon to provide visual reinforcement of confidence level</li>
                             <li>Consider showing percentage values for transparency and trust</li>
+                            <li>Filled variation: Use for enhanced visibility and emphasis, especially in dashboard cards or prominent displays</li>
+                            <li>Filled variation uses dark green text (text-green-950) on gradient background to meet WCAG 2.0 AA contrast requirements</li>
+                            <li>Filled variation padding matches outlined variation for each size (Large: px-3 py-3, Medium: px-2 py-2, Small: px-1 py-1)</li>
                           </>
                         )}
                         {selectedVariant.name === 'Medium confidence tag' && (
@@ -454,10 +458,16 @@ export default function App() {
                     <div>
                       <h4 className="text-gray-900 mb-2">WCAG Compliance</h4>
                       <ul className="list-disc list-inside space-y-1 text-gray-600">
-                        <li>Meets WCAG 2.1 Level AA standards</li>
+                        <li>Meets WCAG 2.0 Level AA standards</li>
                         <li>Keyboard navigation fully supported</li>
                         <li>Screen reader compatible with ARIA labels</li>
-                        <li>Minimum contrast ratio: 4.5:1 for text</li>
+                        <li>Minimum contrast ratio: 4.5:1 for text (WCAG 2.0 AA requirement)</li>
+                        {selectedVariant.name === 'High confidence tag' && (
+                          <>
+                            <li>Filled variation uses text-green-950 on gradient background to ensure 4.5:1 contrast ratio</li>
+                            <li>All text colors validated for accessibility compliance</li>
+                          </>
+                        )}
                       </ul>
                     </div>
                     
@@ -484,10 +494,16 @@ export default function App() {
                     <div>
                       <h4 className="text-gray-900 mb-2">Visual Accessibility</h4>
                       <ul className="list-disc list-inside space-y-1 text-gray-600">
-                        <li>Sufficient color contrast for all text</li>
+                        <li>Sufficient color contrast for all text (minimum 4.5:1 ratio for normal text)</li>
                         <li>Focus indicators clearly visible</li>
                         <li>Touch targets minimum 44x44 pixels</li>
                         <li>No reliance on color alone to convey information</li>
+                        {selectedVariant.name === 'High confidence tag' && (
+                          <>
+                            <li>Filled variation text color (text-green-950) selected specifically for WCAG 2.0 AA compliance</li>
+                            <li>Gradient backgrounds tested for contrast with dark text</li>
+                          </>
+                        )}
                       </ul>
                     </div>
                     
