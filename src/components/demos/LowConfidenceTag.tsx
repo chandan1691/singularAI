@@ -415,8 +415,11 @@ export function LowConfidenceTag() {
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <span className="text-foreground">API Documentation</span>
             <span 
-              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-orange-900 border border-orange-400/50"
-              style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
+              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-blue-800 border border-blue-400/50"
+              style={{ 
+                background: 'linear-gradient(92.78deg, rgb(144, 163, 247) -0.01%, rgb(165, 182, 255) 99.98%)',
+                color: 'rgba(25, 60, 184, 1)'
+              }}
             >
               <TrendingUp className="w-3.5 h-3.5" />
               68%

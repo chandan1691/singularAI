@@ -91,7 +91,7 @@ export function InlineWarning() {
               {/* Pressed State */}
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Pressed State</p>
-                <div className="flex items-center gap-3 px-4 py-3 bg-amber-100/90 rounded-full animate-in fade-in slide-in-from-left-2 duration-500">
+                <div className="flex items-center gap-3 px-4 py-3 bg-amber-100/90 rounded-full animate-in fade-in slide-in-from-left-2 duration-500" style={{ width: 'fit-content' }}>
                   <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" />
                   <div className="flex-1">
                     <p className="text-xs text-amber-800">This message contains content that may violate community guidelines.</p>

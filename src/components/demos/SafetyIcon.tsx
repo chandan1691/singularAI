@@ -309,10 +309,10 @@ export function SafetyIcon() {
               {/* Soft Glow */}
               <div className="space-y-3">
                 <p className="text-xs text-muted-foreground">Soft Glow (24px)</p>
-                <div className="p-4 bg-card rounded-full border border-border">
+                <div className="p-4 bg-card rounded-full border border-border" style={{ width: 'fit-content', height: 'fit-content' }}>
                   <div className="relative">
                     <Shield className="w-6 h-6 text-blue-600" />
-                    <div className="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-50 animate-pulse"></div>
+                    <div className="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-50 animate-pulse" style={{ width: '24px' }}></div>
                   </div>
                 </div>
               </div>
@@ -334,6 +334,7 @@ export function SafetyIcon() {
                 <button
                   onClick={() => setScanningState(!scanningState)}
                   className="p-4 bg-card rounded-full border border-border hover:bg-muted cursor-pointer transition-all"
+                  style={{ width: 'fit-content', height: 'fit-content' }}
                 >
                   <div className="relative inline-block">
                     <Shield className={`w-10 h-10 text-blue-600 ${scanningState ? 'animate-pulse' : ''}`} />
