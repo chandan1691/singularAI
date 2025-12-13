@@ -7,93 +7,358 @@ export function LowConfidenceTag() {
       <div>
         <h4 className="text-foreground mb-4">Component Preview</h4>
         <div className="bg-muted rounded-lg border border-border p-12">
-          {/* Large Size */}
-          <div className="mb-8">
-            <p className="text-muted-foreground mb-3">Large</p>
-            <div className="flex items-center gap-4 flex-wrap">
-              <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-4 h-4" />
-                Low Confidence (48%)
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-4 h-4" />
-                Low Confidence
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-4 h-4" />
-                48%
-              </span>
+          {/* Outlined */}
+          <div className="mb-12">
+            <h5 className="text-foreground font-semibold mb-6">Outlined</h5>
+            
+            {/* Large Size */}
+            <div className="mb-8">
+              <p className="text-muted-foreground mb-3">Large</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <AlertCircle className="w-4 h-4" />
+                    Low Confidence (48%)
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <AlertCircle className="w-4 h-4" />
+                    Low Confidence
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <AlertCircle className="w-4 h-4" />
+                    48%
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            {/* Medium Size */}
+            <div className="mb-8">
+              <p className="text-muted-foreground mb-3">Medium</p>
+              <div className="flex items-center gap-3 flex-wrap">
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3.5 h-3.5" />
+                    Low Confidence (48%)
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3.5 h-3.5" />
+                    Low Confidence
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3.5 h-3.5" />
+                    48%
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            {/* Small Size */}
+            <div>
+              <p className="text-muted-foreground mb-3">Small</p>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3 h-3" />
+                    <span className="text-xs">Low Confidence (48%)</span>
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3 h-3" />
+                    <span className="text-xs">Low Confidence</span>
+                  </span>
+                </span>
+                
+                <span 
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                    padding: '2px'
+                  }}
+                >
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <AlertCircle className="w-3 h-3" />
+                    <span className="text-xs">48%</span>
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
 
-          {/* Medium Size */}
-          <div className="mb-8">
-            <p className="text-muted-foreground mb-3">Medium</p>
-            <div className="flex items-center gap-3 flex-wrap">
-              <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3.5 h-3.5" />
-                Low Confidence (48%)
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3.5 h-3.5" />
-                Low Confidence
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3.5 h-3.5" />
-                48%
-              </span>
-            </div>
-          </div>
-
-          {/* Small Size */}
+          {/* Filled */}
           <div>
-            <p className="text-muted-foreground mb-3">Small</p>
-            <div className="flex items-center gap-2 flex-wrap">
-              <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3 h-3" />
-                <span className="text-xs">Low Confidence (48%)</span>
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3 h-3" />
-                <span className="text-xs">Low Confidence</span>
-              </span>
-              
-              <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
-                style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
-              >
-                <AlertCircle className="w-3 h-3" />
-                <span className="text-xs">48%</span>
-              </span>
+            <h5 className="text-foreground font-semibold mb-6">Filled</h5>
+            
+            {/* Large Size */}
+            <div className="mb-8">
+              <p className="text-muted-foreground mb-3">Large</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                <span 
+                  className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-4 h-4" />
+                  Low Confidence (48%)
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-4 h-4" />
+                  Low Confidence
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-2 px-3 py-3 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-4 h-4" />
+                  48%
+                </span>
+              </div>
+            </div>
+            
+            {/* Medium Size */}
+            <div className="mb-8">
+              <p className="text-muted-foreground mb-3">Medium</p>
+              <div className="flex items-center gap-3 flex-wrap">
+                <span 
+                  className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  Low Confidence (48%)
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  Low Confidence
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-1.5 px-2 py-2 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  48%
+                </span>
+              </div>
+            </div>
+            
+            {/* Small Size */}
+            <div>
+              <p className="text-muted-foreground mb-3">Small</p>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span 
+                  className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3 h-3" />
+                  <span className="text-xs">Low Confidence (48%)</span>
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3 h-3" />
+                  <span className="text-xs">Low Confidence</span>
+                </span>
+                
+                <span 
+                  className="inline-flex flex-row items-center gap-1 px-1 py-1 rounded-full text-pink-950"
+                  style={{ 
+                    background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)',
+                    border: '1px solid rgba(255, 56, 121, 0.5)'
+                  }}
+                >
+                  <AlertCircle className="w-3 h-3" />
+                  <span className="text-xs">48%</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +382,7 @@ export function LowConfidenceTag() {
                 <p className="text-muted-foreground">"Send report to marketing team"</p>
               </div>
               <span 
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-pink-900 border border-pink-400/50"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-pink-950 border border-pink-400/50"
                 style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
               >
                 <AlertCircle className="w-4 h-4" />
@@ -140,7 +405,7 @@ export function LowConfidenceTag() {
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <span className="text-foreground">Troubleshooting Tips</span>
             <span 
-              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
+              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-950 border border-pink-400/50"
               style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
             >
               <AlertCircle className="w-3.5 h-3.5" />
@@ -150,8 +415,8 @@ export function LowConfidenceTag() {
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <span className="text-foreground">API Documentation</span>
             <span 
-              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-blue-800 border border-blue-400/50"
-              style={{ background: 'linear-gradient(92.78deg, #90A3F7 -0.01%, #A5B6FF 99.98%)' }}
+              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-orange-900 border border-orange-400/50"
+              style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
             >
               <TrendingUp className="w-3.5 h-3.5" />
               68%
@@ -160,7 +425,7 @@ export function LowConfidenceTag() {
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <span className="text-foreground">User Guide</span>
             <span 
-              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
+              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-950 border border-pink-400/50"
               style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
             >
               <AlertCircle className="w-3.5 h-3.5" />
@@ -180,15 +445,15 @@ export function LowConfidenceTag() {
             <span className="text-foreground">Invoice_2024.pdf</span>
             <div className="flex items-center gap-2">
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-blue-800 border border-blue-400/50"
-                style={{ background: 'linear-gradient(92.78deg, #90A3F7 -0.01%, #A5B6FF 99.98%)' }}
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-orange-900 border border-orange-400/50"
+                style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
               >
                 <TrendingUp className="w-3 h-3" />
                 <span className="text-xs">Financial</span>
               </span>
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-blue-800 border border-blue-400/50"
-                style={{ background: 'linear-gradient(92.78deg, #90A3F7 -0.01%, #A5B6FF 99.98%)' }}
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-orange-900 border border-orange-400/50"
+                style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
               >
                 <TrendingUp className="w-3 h-3" />
                 <span className="text-xs">72%</span>
@@ -199,14 +464,14 @@ export function LowConfidenceTag() {
             <span className="text-foreground">Notes_meeting.txt</span>
             <div className="flex items-center gap-2">
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-950 border border-pink-400/50"
                 style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
               >
                 <AlertCircle className="w-3 h-3" />
                 <span className="text-xs">General</span>
               </span>
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-950 border border-pink-400/50"
                 style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
               >
                 <AlertCircle className="w-3 h-3" />
@@ -233,7 +498,7 @@ export function LowConfidenceTag() {
             <div className="flex items-center justify-between mb-2">
               <span className="text-muted-foreground">Translated (Japanese)</span>
               <span 
-                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50"
+                className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-950 border border-pink-400/50"
                 style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
               >
                 <AlertCircle className="w-3.5 h-3.5" />
@@ -243,7 +508,7 @@ export function LowConfidenceTag() {
             <p className="text-foreground mb-3">「早起きは三文の徳」</p>
             <div className="flex items-center gap-2 text-xs text-pink-700 bg-pink-100 p-3 rounded-md">
               <span 
-                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50"
+                className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-950 border border-pink-400/50"
                 style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
               >
                 <AlertCircle className="w-3 h-3" />

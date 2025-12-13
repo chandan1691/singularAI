@@ -16,24 +16,75 @@ export function HighConfidenceTag() {
               <p className="text-muted-foreground mb-3">Large</p>
               <div className="flex items-center gap-4 flex-wrap">
                 <span 
-                  className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-4 h-4" />
-                  High Confidence (94%)
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <CheckCircle2 className="w-4 h-4" />
+                    High Confidence (94%)
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-4 h-4" />
-                  High Confidence
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <CheckCircle2 className="w-4 h-4" />
+                    High Confidence
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-4 h-4" />
-                  94%
+                  <span 
+                    className="flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content',
+                      height: '48px'
+                    }}
+                  >
+                    <CheckCircle2 className="w-4 h-4" />
+                    94%
+                  </span>
                 </span>
               </div>
             </div>
@@ -43,24 +94,72 @@ export function HighConfidenceTag() {
               <p className="text-muted-foreground mb-3">Medium</p>
               <div className="flex items-center gap-3 flex-wrap">
                 <span 
-                  className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  High Confidence (94%)
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    High Confidence (94%)
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  High Confidence
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    High Confidence
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  94%
+                  <span 
+                    className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    94%
+                  </span>
                 </span>
               </div>
             </div>
@@ -70,24 +169,72 @@ export function HighConfidenceTag() {
               <p className="text-muted-foreground mb-3">Small</p>
               <div className="flex items-center gap-2 flex-wrap">
                 <span 
-                  className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3 h-3" />
-                  <span className="text-xs">High Confidence (94%)</span>
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3 h-3" />
+                    <span className="text-xs">High Confidence (94%)</span>
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3 h-3" />
-                  <span className="text-xs">High Confidence</span>
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3 h-3" />
+                    <span className="text-xs">High Confidence</span>
+                  </span>
                 </span>
                 
                 <span 
-                  className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 bg-positive-green"
+                  className="inline-block rounded-full"
+                  style={{ 
+                    background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                    padding: '2px'
+                  }}
                 >
-                  <CheckCircle2 className="w-3 h-3" />
-                  <span className="text-xs">94%</span>
+                  <span 
+                    className="flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                    style={{
+                      backgroundColor: 'rgba(255, 255, 255, 1)',
+                      borderRadius: '100px',
+                      background: 'rgba(255, 255, 255, 1)',
+                      backgroundImage: 'none',
+                      color: 'rgba(10, 10, 10, 1)',
+                      width: 'fit-content'
+                    }}
+                  >
+                    <CheckCircle2 className="w-3 h-3" />
+                    <span className="text-xs">94%</span>
+                  </span>
                 </span>
               </div>
             </div>

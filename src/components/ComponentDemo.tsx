@@ -27,7 +27,7 @@ export function ComponentDemo({ componentName, useCase, tab = 'design' }: Compon
         return <HighConfidenceTag />;
       case 'Medium confidence tag':
         return <MediumConfidenceTag />;
-      case 'Low confidence warning':
+      case 'Low confidence tag':
         return <LowConfidenceTag />;
       case 'Confidence score tooltip':
         return <ConfidenceScoreTooltip />;
@@ -201,7 +201,7 @@ export function MediumConfidenceTag() {
     </div>
   );
 }`;
-      case 'Low confidence warning':
+      case 'Low confidence tag':
         return `import { AlertCircle, TrendingUp } from "lucide-react";
 
 export function LowConfidenceTag() {
@@ -734,7 +734,7 @@ export function InlineHighlight() {
             'Horizontal layout with consistent spacing between variants'
           ]
         };
-      case 'Low confidence warning':
+      case 'Low confidence tag':
         return {
           dimensions: [
             'Large - Height: ~40px, Padding: 12px (py-3 px-3), Icon: 16px (w-4 h-4)',

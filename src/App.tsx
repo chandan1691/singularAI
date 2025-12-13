@@ -29,7 +29,7 @@ export const AI_UI_PATTERNS: Category[] = [
         variants: [
           { name: 'High confidence tag', useCase: 'Document classification, search results, translations' },
           { name: 'Medium confidence tag', useCase: 'Partially reliable results, moderate confidence scores' },
-          { name: 'Low confidence warning', useCase: 'Ambiguous autocomplete' },
+          { name: 'Low confidence tag', useCase: 'Ambiguous autocomplete' },
           { name: 'Confidence score tooltip', useCase: 'Translation score' },
         ]
       }
@@ -320,7 +320,7 @@ export default function App() {
                         Use this pattern when you need to {selectedVariant.useCase.toLowerCase()}. 
                         It provides clear feedback and maintains consistency with other AI interactions.
                       </p>
-                      {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence warning') && (
+                      {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence tag') && (
                         <div className="mt-4 space-y-2">
                           <p className="text-gray-600"><strong>Large Size:</strong> Use for prominent displays, hero sections, or primary AI results where confidence is a key decision factor.</p>
                           <p className="text-gray-600"><strong>Medium Size:</strong> Use for list items, search results, or secondary information displays where space is moderate.</p>
@@ -356,7 +356,7 @@ export default function App() {
                         <li>Include error handling and recovery options</li>
                         <li>Ensure consistent spacing and alignment</li>
                         <li>Use appropriate contrast ratios for text</li>
-                        {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence warning') && (
+                        {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence tag') && (
                           <>
                             <li>Choose the appropriate size based on context: Large for prominent displays, Medium for lists, Small for inline or compact layouts</li>
                             <li>Use horizontal layout to show multiple variations side-by-side</li>
@@ -399,7 +399,7 @@ export default function App() {
                         <li>Failing to handle error states gracefully</li>
                         <li>Inconsistent styling with other components</li>
                         <li>Poor mobile responsiveness</li>
-                        {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence warning') && (
+                        {(selectedVariant.name === 'High confidence tag' || selectedVariant.name === 'Low confidence tag') && (
                           <>
                             <li>Using the wrong size for the context (e.g., large tags in compact tables)</li>
                             <li>Mixing different confidence levels without proper explanation</li>

@@ -16,13 +16,30 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 hover:opacity-90 transition-all bg-positive-green"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>High Confidence</span>
-                      <Info className="w-4 h-4 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content',
+                          height: '48px'
+                        }}
+                      >
+                        <CheckCircle2 className="w-4 h-4" />
+                        <span>High Confidence</span>
+                        <Info className="w-4 h-4 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-green-400/60 p-3 max-w-xs [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                     <div className="space-y-1">
@@ -42,14 +59,30 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-2 px-3 py-3 rounded-full text-orange-900 border border-orange-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <TrendingUp className="w-4 h-4" />
-                      <span>Medium Confidence</span>
-                      <Info className="w-4 h-4 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content',
+                          height: '48px'
+                        }}
+                      >
+                        <TrendingUp className="w-4 h-4" />
+                        <span>Medium Confidence</span>
+                        <Info className="w-4 h-4 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-orange-400/60 p-3 max-w-xs [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                     <div className="space-y-1">
@@ -69,14 +102,30 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-2 px-3 py-3 rounded-full text-pink-900 border border-pink-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <AlertCircle className="w-4 h-4" />
-                      <span>Low Confidence</span>
-                      <Info className="w-4 h-4 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content',
+                          height: '48px'
+                        }}
+                      >
+                        <AlertCircle className="w-4 h-4" />
+                        <span>Low Confidence</span>
+                        <Info className="w-4 h-4 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-pink-400/60 p-3 max-w-xs [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                     <div className="space-y-1">
@@ -102,13 +151,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-green-900 border border-green-400/50 hover:opacity-90 transition-all bg-positive-green"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                      <span>94%</span>
-                      <Info className="w-3.5 h-3.5 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        <span>94%</span>
+                        <Info className="w-3.5 h-3.5 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-green-400/60 p-2.5 max-w-xs [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                     <div className="space-y-1">
@@ -128,14 +193,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-orange-900 border border-orange-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <TrendingUp className="w-3.5 h-3.5" />
-                      <span>68%</span>
-                      <Info className="w-3.5 h-3.5 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <TrendingUp className="w-3.5 h-3.5" />
+                        <span>68%</span>
+                        <Info className="w-3.5 h-3.5 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-orange-400/60 p-2.5 max-w-xs [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                     <div className="space-y-1">
@@ -155,14 +235,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-pink-900 border border-pink-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <AlertCircle className="w-3.5 h-3.5" />
-                      <span>42%</span>
-                      <Info className="w-3.5 h-3.5 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <AlertCircle className="w-3.5 h-3.5" />
+                        <span>42%</span>
+                        <Info className="w-3.5 h-3.5 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-pink-400/60 p-2.5 max-w-xs [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                     <div className="space-y-1">
@@ -188,13 +283,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-green-900 border border-green-400/50 hover:opacity-90 transition-all bg-positive-green"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <CheckCircle2 className="w-3 h-3" />
-                      <span className="text-xs">94%</span>
-                      <Info className="w-3 h-3 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <CheckCircle2 className="w-3 h-3" />
+                        <span className="text-xs">94%</span>
+                        <Info className="w-3 h-3 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-green-400/60 p-2 max-w-[200px] [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                     <div className="flex items-center gap-1.5">
@@ -209,14 +320,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-orange-900 border border-orange-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <TrendingUp className="w-3 h-3" />
-                      <span className="text-xs">68%</span>
-                      <Info className="w-3 h-3 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <TrendingUp className="w-3 h-3" />
+                        <span className="text-xs">68%</span>
+                        <Info className="w-3 h-3 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-orange-400/60 p-2 max-w-[200px] [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                     <div className="flex items-center gap-1.5">
@@ -231,14 +357,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-pink-900 border border-pink-400/50 hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <AlertCircle className="w-3 h-3" />
-                      <span className="text-xs">42%</span>
-                      <Info className="w-3 h-3 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <AlertCircle className="w-3 h-3" />
+                        <span className="text-xs">42%</span>
+                        <Info className="w-3 h-3 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-pink-400/60 p-2 max-w-[200px] [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                     <div className="flex items-center gap-1.5">
@@ -270,13 +411,30 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="group inline-flex items-center gap-2 px-3 py-3 rounded-full text-green-900 border border-green-400/50 hover:opacity-90 transition-all bg-positive-green"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>Translation Score</span>
-                      <Info className="w-4 h-4 opacity-60" />
-                    </button>
+                      <button 
+                        className="group inline-flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content',
+                          height: '48px'
+                        }}
+                      >
+                        <CheckCircle2 className="w-4 h-4" />
+                        <span>Translation Score</span>
+                        <Info className="w-4 h-4 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-green-400/60 p-3 max-w-xs [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                     <div className="space-y-1">
@@ -315,22 +473,37 @@ export function ConfidenceScoreTooltip() {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <button 
-                    className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-foreground border border-primary/50 hover:opacity-90 transition-all"
-                    className="bg-primary"
+                  <span 
+                    className="inline-block rounded-full"
+                    style={{ 
+                      background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                      padding: '2px'
+                    }}
                   >
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>96%</span>
-                    <Info className="w-3.5 h-3.5 opacity-60" />
-                  </button>
+                    <button 
+                      className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 1)',
+                        borderRadius: '100px',
+                        background: 'rgba(255, 255, 255, 1)',
+                        backgroundImage: 'none',
+                        color: 'rgba(10, 10, 10, 1)',
+                        width: 'fit-content'
+                      }}
+                    >
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      <span>96%</span>
+                      <Info className="w-3.5 h-3.5 opacity-60" />
+                    </button>
+                  </span>
                 </TooltipTrigger>
-                <TooltipContent className="bg-primary text-white border-primary/60 p-2.5 max-w-xs [&_svg]:fill-primary">
+                <TooltipContent className="text-white border-green-400/60 p-2.5 max-w-xs [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                   <div className="space-y-1">
                     <div className="flex items-center gap-1.5">
-                      <CheckCircle2 className="w-3 h-3 text-primary-foreground" />
+                      <CheckCircle2 className="w-3 h-3 text-green-900" />
                       <span className="font-medium">High Relevance (96%)</span>
                     </div>
-                    <p className="text-primary-foreground">
+                    <p className="text-green-900">
                       Strong keyword match and high user engagement
                     </p>
                   </div>
@@ -347,22 +520,37 @@ export function ConfidenceScoreTooltip() {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <button 
-                    className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-accent-foreground border border-accent/50 hover:opacity-90 transition-all"
-                    className="bg-accent"
+                  <span 
+                    className="inline-block rounded-full"
+                    style={{ 
+                      background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                      padding: '2px'
+                    }}
                   >
-                    <TrendingUp className="w-3.5 h-3.5" />
-                    <span>72%</span>
-                    <Info className="w-3.5 h-3.5 opacity-60" />
-                  </button>
+                    <button 
+                      className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 1)',
+                        borderRadius: '100px',
+                        background: 'rgba(255, 255, 255, 1)',
+                        backgroundImage: 'none',
+                        color: 'rgba(10, 10, 10, 1)',
+                        width: 'fit-content'
+                      }}
+                    >
+                      <TrendingUp className="w-3.5 h-3.5" />
+                      <span>72%</span>
+                      <Info className="w-3.5 h-3.5 opacity-60" />
+                    </button>
+                  </span>
                 </TooltipTrigger>
-                <TooltipContent className="bg-accent text-white border-accent/60 p-2.5 max-w-xs [&_svg]:fill-accent">
+                <TooltipContent className="text-white border-orange-400/60 p-2.5 max-w-xs [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                   <div className="space-y-1">
                     <div className="flex items-center gap-1.5">
-                      <TrendingUp className="w-3 h-3 text-accent-foreground" />
+                      <TrendingUp className="w-3 h-3 text-orange-900" />
                       <span className="font-medium">Medium Relevance (72%)</span>
                     </div>
-                    <p className="text-accent-foreground">
+                    <p className="text-orange-900">
                       Partial keyword match, related content
                     </p>
                   </div>
@@ -379,16 +567,31 @@ export function ConfidenceScoreTooltip() {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <button 
-                    className="group inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-foreground border border-chart-3/50 hover:opacity-90 transition-all"
-                    className="bg-chart-3"
+                  <span 
+                    className="inline-block rounded-full"
+                    style={{ 
+                      background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                      padding: '2px'
+                    }}
                   >
-                    <AlertCircle className="w-3.5 h-3.5" />
-                    <span>45%</span>
-                    <Info className="w-3.5 h-3.5 opacity-60" />
-                  </button>
+                    <button 
+                      className="group inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 1)',
+                        borderRadius: '100px',
+                        background: 'rgba(255, 255, 255, 1)',
+                        backgroundImage: 'none',
+                        color: 'rgba(10, 10, 10, 1)',
+                        width: 'fit-content'
+                      }}
+                    >
+                      <AlertCircle className="w-3.5 h-3.5" />
+                      <span>45%</span>
+                      <Info className="w-3.5 h-3.5 opacity-60" />
+                    </button>
+                  </span>
                 </TooltipTrigger>
-                <TooltipContent className="bg-chart-3 text-white border-chart-3/60 p-2.5 max-w-xs [&_svg]:fill-chart-3">
+                <TooltipContent className="text-white border-pink-400/60 p-2.5 max-w-xs [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                   <div className="space-y-1">
                     <div className="flex items-center gap-1.5">
                       <AlertCircle className="w-3 h-3 text-foreground" />
@@ -427,14 +630,29 @@ export function ConfidenceScoreTooltip() {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button 
-                          className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-foreground border border-primary/50 hover:opacity-90 transition-all"
-                          className="bg-primary"
+                        <span 
+                          className="inline-block rounded-full"
+                          style={{ 
+                            background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                            padding: '2px'
+                          }}
                         >
-                          <CheckCircle2 className="w-3 h-3" />
-                          <span className="text-xs">94%</span>
-                          <Info className="w-3 h-3 opacity-60" />
-                        </button>
+                          <button 
+                            className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 1)',
+                              borderRadius: '100px',
+                              background: 'rgba(255, 255, 255, 1)',
+                              backgroundImage: 'none',
+                              color: 'rgba(10, 10, 10, 1)',
+                              width: 'fit-content'
+                            }}
+                          >
+                            <CheckCircle2 className="w-3 h-3" />
+                            <span className="text-xs">94%</span>
+                            <Info className="w-3 h-3 opacity-60" />
+                          </button>
+                        </span>
                       </TooltipTrigger>
                       <TooltipContent className="text-white border-green-400/60 p-2 max-w-[200px] [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                         <div className="flex items-center gap-1.5">
@@ -453,14 +671,29 @@ export function ConfidenceScoreTooltip() {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button 
-                          className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-accent-foreground border border-accent/50 hover:opacity-90 transition-all"
-                          className="bg-accent"
+                        <span 
+                          className="inline-block rounded-full"
+                          style={{ 
+                            background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                            padding: '2px'
+                          }}
                         >
-                          <TrendingUp className="w-3 h-3" />
-                          <span className="text-xs">71%</span>
-                          <Info className="w-3 h-3 opacity-60" />
-                        </button>
+                          <button 
+                            className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 1)',
+                              borderRadius: '100px',
+                              background: 'rgba(255, 255, 255, 1)',
+                              backgroundImage: 'none',
+                              color: 'rgba(10, 10, 10, 1)',
+                              width: 'fit-content'
+                            }}
+                          >
+                            <TrendingUp className="w-3 h-3" />
+                            <span className="text-xs">71%</span>
+                            <Info className="w-3 h-3 opacity-60" />
+                          </button>
+                        </span>
                       </TooltipTrigger>
                       <TooltipContent className="text-white border-orange-400/60 p-2 max-w-[200px] [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                         <div className="flex items-center gap-1.5">
@@ -479,14 +712,29 @@ export function ConfidenceScoreTooltip() {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button 
-                          className="inline-flex items-center gap-1 px-1 py-1 rounded-full text-foreground border border-chart-3/50 hover:opacity-90 transition-all"
-                          className="bg-chart-3"
+                        <span 
+                          className="inline-block rounded-full"
+                          style={{ 
+                            background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                            padding: '2px'
+                          }}
                         >
-                          <AlertCircle className="w-3 h-3" />
-                          <span className="text-xs">38%</span>
-                          <Info className="w-3 h-3 opacity-60" />
-                        </button>
+                          <button 
+                            className="inline-flex items-center gap-1 px-1 py-1 justify-center rounded-full bg-white"
+                            style={{
+                              backgroundColor: 'rgba(255, 255, 255, 1)',
+                              borderRadius: '100px',
+                              background: 'rgba(255, 255, 255, 1)',
+                              backgroundImage: 'none',
+                              color: 'rgba(10, 10, 10, 1)',
+                              width: 'fit-content'
+                            }}
+                          >
+                            <AlertCircle className="w-3 h-3" />
+                            <span className="text-xs">38%</span>
+                            <Info className="w-3 h-3 opacity-60" />
+                          </button>
+                        </span>
                       </TooltipTrigger>
                       <TooltipContent className="text-white border-pink-400/60 p-2 max-w-[200px] [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                         <div className="flex items-center gap-1.5">
@@ -515,14 +763,30 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-2 px-3 py-3 rounded-full text-foreground border border-primary/50 hover:opacity-90 transition-all"
-                      className="bg-primary"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(79, 221, 57, 1) 0%, rgba(139, 224, 126, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>Positive</span>
-                      <Info className="w-4 h-4 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-2 px-3 py-3 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content',
+                          height: '48px'
+                        }}
+                      >
+                        <CheckCircle2 className="w-4 h-4" />
+                        <span>Positive</span>
+                        <Info className="w-4 h-4 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-green-400/60 p-3 max-w-xs [&_svg]:fill-green-500" style={{ background: 'linear-gradient(93.54deg, #4FDD39 0.05%, #8BE07E 99.99%)' }}>
                     <div className="space-y-1">
@@ -546,14 +810,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-accent-foreground border border-accent/50 hover:opacity-90 transition-all"
-                      className="bg-accent"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <TrendingUp className="w-3.5 h-3.5" />
-                      <span>Neutral</span>
-                      <Info className="w-3.5 h-3.5 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <TrendingUp className="w-3.5 h-3.5" />
+                        <span>Neutral</span>
+                        <Info className="w-3.5 h-3.5 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-orange-400/60 p-2.5 max-w-xs [&_svg]:fill-orange-500" style={{ background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)' }}>
                     <div className="space-y-1">
@@ -577,14 +856,29 @@ export function ConfidenceScoreTooltip() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button 
-                      className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-foreground border border-chart-3/50 hover:opacity-90 transition-all"
-                      className="bg-chart-3"
+                    <span 
+                      className="inline-block rounded-full"
+                      style={{ 
+                        background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                        padding: '2px'
+                      }}
                     >
-                      <AlertCircle className="w-3.5 h-3.5" />
-                      <span>Negative</span>
-                      <Info className="w-3.5 h-3.5 opacity-60" />
-                    </button>
+                      <button 
+                        className="inline-flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                        style={{
+                          backgroundColor: 'rgba(255, 255, 255, 1)',
+                          borderRadius: '100px',
+                          background: 'rgba(255, 255, 255, 1)',
+                          backgroundImage: 'none',
+                          color: 'rgba(10, 10, 10, 1)',
+                          width: 'fit-content'
+                        }}
+                      >
+                        <AlertCircle className="w-3.5 h-3.5" />
+                        <span>Negative</span>
+                        <Info className="w-3.5 h-3.5 opacity-60" />
+                      </button>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent className="text-white border-pink-400/60 p-2.5 max-w-xs [&_svg]:fill-pink-500" style={{ background: 'linear-gradient(93.54deg, #FF3879 0.05%, #F57EA5 99.99%)' }}>
                     <div className="space-y-1">
