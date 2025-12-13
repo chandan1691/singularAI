@@ -59,7 +59,7 @@
           "$description": "Muted background (light mode)"
         },
         "mutedForeground": {
-          "$value": "#717182",
+          "$value": "#5f5f6f",
           "$type": "color",
           "$description": "Muted text color (light mode)"
         },
@@ -84,7 +84,7 @@
           "$description": "Text on destructive color (light mode)"
         },
         "border": {
-          "$value": "rgba(0, 0, 0, 0.1)",
+          "$value": "rgba(0, 0, 0, 0.42)",
           "$type": "color",
           "$description": "Border color (light mode)"
         },
@@ -104,7 +104,7 @@
           "$description": "Switch background color (light mode)"
         },
         "ring": {
-          "$value": "oklch(0.708 0 0)",
+          "$value": "oklch(0.55 0 0)",
           "$type": "color",
           "$description": "Focus ring color (light mode)"
         }
@@ -186,12 +186,12 @@
           "$description": "Destructive/error color (dark mode)"
         },
         "destructiveForeground": {
-          "$value": "oklch(0.637 0.237 25.331)",
+          "$value": "oklch(0.85 0.237 25.331)",
           "$type": "color",
           "$description": "Text on destructive color (dark mode)"
         },
         "border": {
-          "$value": "oklch(0.269 0 0)",
+          "$value": "oklch(0.5 0 0)",
           "$type": "color",
           "$description": "Border color (dark mode)"
         },
@@ -201,7 +201,7 @@
           "$description": "Input border color (dark mode)"
         },
         "ring": {
-          "$value": "oklch(0.439 0 0)",
+          "$value": "oklch(0.5 0 0)",
           "$type": "color",
           "$description": "Focus ring color (dark mode)"
         }
@@ -239,12 +239,12 @@
             "$description": "Text on sidebar accent (light mode)"
           },
           "border": {
-            "$value": "oklch(0.922 0 0)",
+            "$value": "oklch(0.65 0 0)",
             "$type": "color",
             "$description": "Sidebar border (light mode)"
           },
           "ring": {
-            "$value": "oklch(0.708 0 0)",
+            "$value": "oklch(0.55 0 0)",
             "$type": "color",
             "$description": "Sidebar focus ring (light mode)"
           }
@@ -281,12 +281,12 @@
             "$description": "Text on sidebar accent (dark mode)"
           },
           "border": {
-            "$value": "oklch(0.269 0 0)",
+            "$value": "oklch(0.52 0 0)",
             "$type": "color",
             "$description": "Sidebar border (dark mode)"
           },
           "ring": {
-            "$value": "oklch(0.439 0 0)",
+            "$value": "oklch(0.52 0 0)",
             "$type": "color",
             "$description": "Sidebar focus ring (dark mode)"
           }
