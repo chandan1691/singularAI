@@ -19,13 +19,13 @@ export function SafetyIcon() {
                 <p className="text-xs text-muted-foreground">16px</p>
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-card rounded-full border border-border">
-                    <ShieldAlert className="w-4 h-4 text-chart-3" />
+                    <ShieldAlert className="w-4 h-4 text-chart-3" aria-hidden="true" />
                   </div>
                   <div className="p-3 bg-card rounded-full border border-border hover:bg-muted cursor-pointer transition-all">
-                    <ShieldAlert className="w-4 h-4 text-chart-3 hover:text-chart-3" />
+                    <ShieldAlert className="w-4 h-4 text-chart-3 hover:text-chart-3" aria-hidden="true" />
                   </div>
                   <div className="p-3 bg-chart-3/20 rounded-full border border-chart-3/40">
-                    <ShieldAlert className="w-4 h-4 text-chart-3" />
+                    <ShieldAlert className="w-4 h-4 text-chart-3" aria-hidden="true" />
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground">Idle / Hover / Active</p>
@@ -333,13 +333,15 @@ export function SafetyIcon() {
                 <p className="text-xs text-muted-foreground">Interactive (40px)</p>
                 <button
                   onClick={() => setScanningState(!scanningState)}
-                  className="p-4 bg-card rounded-full border border-border hover:bg-muted cursor-pointer transition-all"
+                  className="p-4 bg-card rounded-full border border-border hover:bg-muted cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                   style={{ width: 'fit-content', height: 'fit-content' }}
+                  aria-label={scanningState ? 'Stop scanning' : 'Start scanning'}
+                  aria-pressed={scanningState}
                 >
                   <div className="relative inline-block">
-                    <Shield className={`w-10 h-10 text-blue-600 ${scanningState ? 'animate-pulse' : ''}`} />
+                    <Shield className={`w-10 h-10 text-blue-600 ${scanningState ? 'animate-pulse' : ''}`} aria-hidden="true" />
                     {scanningState && (
-                      <div className="absolute inset-0 border-2 border-blue-400 rounded-full animate-ping"></div>
+                      <div className="absolute inset-0 border-2 border-blue-400 rounded-full animate-ping" aria-hidden="true"></div>
                     )}
                   </div>
                 </button>
@@ -420,18 +422,22 @@ export function SafetyIcon() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-muted rounded-lg border border-border">
-            <div className="flex items-start justify-between mb-2">
-              <h6 style={{ fontSize: '16px', fontFamily: 'Urbanist, sans-serif' }}>Article: AI Safety Guidelines</h6>
-              <ShieldCheck className="w-5 h-5 text-green-600" />
+            <div className="flex items-start gap-3 mb-2">
+              <ShieldCheck className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" aria-label="Safe content" aria-hidden="false" />
+              <div className="flex-1">
+                <h6 style={{ fontSize: '16px', fontFamily: 'Urbanist, sans-serif' }}>Article: AI Safety Guidelines</h6>
+                <p className="text-muted-foreground text-sm mt-1">This article has been reviewed and approved for publication.</p>
+              </div>
             </div>
-            <p className="text-muted-foreground text-sm">This article has been reviewed and approved for publication.</p>
           </div>
           <div className="p-4 bg-muted rounded-lg border border-border">
-            <div className="flex items-start justify-between mb-2">
-              <h6 style={{ fontSize: '16px', fontFamily: 'Urbanist, sans-serif' }}>Comment: User Feedback</h6>
-              <ShieldAlert className="w-5 h-5 text-chart-3" />
+            <div className="flex items-start gap-3 mb-2">
+              <ShieldAlert className="w-5 h-5 text-chart-3 flex-shrink-0 mt-0.5" aria-label="Warning: content needs review" aria-hidden="false" />
+              <div className="flex-1">
+                <h6 style={{ fontSize: '16px', fontFamily: 'Urbanist, sans-serif' }}>Comment: User Feedback</h6>
+                <p className="text-muted-foreground text-sm mt-1">This comment may contain sensitive content. Review recommended.</p>
+              </div>
             </div>
-            <p className="text-muted-foreground text-sm">This comment may contain sensitive content. Review recommended.</p>
           </div>
         </div>
       </div>
@@ -444,21 +450,21 @@ export function SafetyIcon() {
         <div className="space-y-2">
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg border border-border">
             <div className="flex items-center gap-3">
-                    <Eye className="w-5 h-5 text-blue-800" />
+              <Eye className="w-5 h-5 text-blue-800" aria-label="Requires review" aria-hidden="false" />
               <span className="text-foreground">Post #1234 - Requires Review</span>
             </div>
             <span className="text-xs text-muted-foreground">2 mins ago</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg border border-border">
             <div className="flex items-center gap-3">
-              <Flag className="w-5 h-5 text-red-600" />
+              <Flag className="w-5 h-5 text-red-600" aria-label="Flagged content" aria-hidden="false" />
               <span className="text-foreground">Comment #5678 - Flagged by User</span>
             </div>
             <span className="text-xs text-muted-foreground">5 mins ago</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg border border-border">
             <div className="flex items-center gap-3">
-              <ShieldAlert className="w-5 h-5 text-chart-3" />
+              <ShieldAlert className="w-5 h-5 text-chart-3" aria-label="Warning issued" aria-hidden="false" />
               <span className="text-foreground">Article #9012 - Warning Issued</span>
             </div>
             <span className="text-xs text-muted-foreground">10 mins ago</span>
@@ -474,18 +480,19 @@ export function SafetyIcon() {
         <div className="p-4 bg-muted rounded-lg border border-border">
           <div className="flex items-center justify-between mb-4">
             <span className="text-foreground">AI Content Scanner</span>
-            <div className="relative inline-block">
-              <Shield className="w-6 h-6 text-blue-600 animate-pulse" />
-              <div className="absolute inset-0 border-2 border-blue-400 rounded-full animate-ping"></div>
+            <div className="relative inline-block" role="status" aria-live="polite" aria-label="Scanning in progress">
+              <Shield className="w-6 h-6 text-blue-600 animate-pulse" aria-hidden="true" />
+              <div className="absolute inset-0 border-2 border-blue-400 rounded-full animate-ping" aria-hidden="true"></div>
             </div>
           </div>
           <textarea
-            className="w-full p-3 border border-gray-300 rounded-md bg-card text-foreground min-h-[100px]"
+            className="w-full p-3 border border-gray-300 rounded-md bg-card text-foreground min-h-[100px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
             placeholder="Type your content here..."
             defaultValue="This is example content being scanned in real-time..."
+            aria-label="Content input for AI scanning"
           />
-          <div className="mt-3 flex items-center gap-2 text-sm text-blue-600">
-            <Shield className="w-4 h-4" />
+          <div className="mt-3 flex items-center gap-2 text-sm text-blue-600" role="status" aria-live="polite">
+            <Shield className="w-4 h-4" aria-hidden="true" />
             <span>Scanning content for safety compliance...</span>
           </div>
         </div>
@@ -498,24 +505,24 @@ export function SafetyIcon() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-            <ShieldCheck className="w-8 h-8 text-green-600 mb-2" />
+            <ShieldCheck className="w-8 h-8 text-green-600 mb-2" aria-hidden="true" />
             <p className="text-foreground">Safe Content</p>
-            <p className="text-2xl text-green-600 mt-1">1,234</p>
+            <p className="text-2xl text-green-600 mt-1" aria-label="1,234 safe content items">1,234</p>
           </div>
           <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
-            <ShieldAlert className="w-8 h-8 text-chart-3 mb-2" />
+            <ShieldAlert className="w-8 h-8 text-chart-3 mb-2" aria-hidden="true" />
             <p className="text-foreground">Warnings</p>
-            <p className="text-2xl text-chart-3 mt-1">45</p>
+            <p className="text-2xl text-chart-3 mt-1" aria-label="45 warnings">45</p>
           </div>
           <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-            <Eye className="w-8 h-8 text-blue-600 mb-2" />
+            <Eye className="w-8 h-8 text-blue-600 mb-2" aria-hidden="true" />
             <p className="text-foreground">Under Review</p>
-            <p className="text-2xl text-blue-600 mt-1">23</p>
+            <p className="text-2xl text-blue-600 mt-1" aria-label="23 items under review">23</p>
           </div>
           <div className="p-4 bg-red-50 rounded-lg border border-red-200">
-            <Flag className="w-8 h-8 text-red-600 mb-2" />
+            <Flag className="w-8 h-8 text-red-600 mb-2" aria-hidden="true" />
             <p className="text-foreground">Flagged</p>
-            <p className="text-2xl text-red-700 mt-1">8</p>
+            <p className="text-2xl text-red-700 mt-1" aria-label="8 flagged items">8</p>
           </div>
         </div>
       </div>

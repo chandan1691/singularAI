@@ -31,7 +31,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Default</p>
                       <button 
-                        className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex items-center gap-2 px-3 h-10 text-primary-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-primary"
                         style={{
                           boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                         }}
@@ -97,7 +97,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Loading</p>
                       <button 
-                        className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex items-center gap-2 px-3 h-10 text-primary-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-primary"
                         style={{
                           boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                         }}
@@ -305,8 +305,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Small</p>
                       <button 
-                        className="inline-flex items-center gap-1.5 px-3 h-8 text-destructive-foreground rounded-full transition-all"
-                        className="bg-destructive"
+                        className="inline-flex items-center gap-1.5 px-3 h-8 text-primary-foreground rounded-full transition-all bg-primary"
                         style={{
                           boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)'
                         }}
@@ -320,9 +319,8 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Medium</p>
                       <button 
-                        className="inline-flex items-center gap-2 px-4 h-9 text-destructive-foreground rounded-full transition-all"
+                        className="inline-flex items-center gap-2 px-4 h-9 text-primary-foreground rounded-full transition-all bg-primary"
                         style={{
-                          background: 'var(--destructive)',
                           boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.08)'
                         }}
                       >
@@ -335,9 +333,8 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Large</p>
                       <button 
-                        className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all"
+                        className="inline-flex items-center gap-2 px-3 h-10 text-primary-foreground rounded-full transition-all bg-primary"
                         style={{
-                          background: 'var(--destructive)',
                           boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                         }}
                       >
@@ -510,9 +507,8 @@ export function ErrorButton() {
                 <button 
                   onClick={handleRetry}
                   disabled={loadingPrimary}
-                  className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full disabled:opacity-50 transition-all"
+                  className="inline-flex items-center gap-2 px-3 h-10 text-primary-foreground rounded-full disabled:opacity-50 transition-all bg-primary"
                   style={{
-                    background: 'var(--destructive)',
                     boxShadow: loadingPrimary ? 'none' : '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                   }}
                   onMouseEnter={(e) => {
@@ -562,9 +558,8 @@ export function ErrorButton() {
               </div>
               <div className="flex flex-wrap gap-2">
                 <button 
-                  className="inline-flex items-center gap-2 px-4 h-10 text-destructive-foreground rounded-full transition-all"
+                  className="inline-flex items-center gap-2 px-4 h-10 text-primary-foreground rounded-full transition-all bg-primary"
                   style={{
-                    background: 'var(--destructive)',
                     boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                   }}
                   onMouseEnter={(e) => {

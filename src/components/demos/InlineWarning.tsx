@@ -19,8 +19,8 @@ export function InlineWarning() {
               {/* Idle State */}
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Idle State</p>
-                <div className="inline-flex items-center gap-2 text-amber-800 group cursor-pointer animate-in fade-in slide-in-from-left-2 duration-500">
-                  <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                <div className="inline-flex items-center gap-2 text-amber-800 group cursor-pointer animate-in fade-in slide-in-from-left-2 duration-500" role="alert">
+                  <AlertTriangle className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   <span className="text-xs">The content above may not fully comply with safety guidelines.</span>
                 </div>
               </div>
@@ -28,8 +28,8 @@ export function InlineWarning() {
               {/* Hover State */}
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Hover State</p>
-                <div className="inline-flex items-center gap-2 text-amber-800 group cursor-pointer opacity-80 animate-in fade-in slide-in-from-left-2 duration-500">
-                  <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                <div className="inline-flex items-center gap-2 text-amber-800 group cursor-pointer opacity-80 animate-in fade-in slide-in-from-left-2 duration-500" role="alert">
+                  <AlertTriangle className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                   <span className="text-xs underline decoration-dotted underline-offset-2">The content above may not fully comply with safety guidelines.</span>
                 </div>
               </div>
@@ -38,15 +38,23 @@ export function InlineWarning() {
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Expandable Version</p>
                 <div className="space-y-2">
-                  <div 
-                    className="inline-flex items-center gap-2 text-amber-800 cursor-pointer hover:opacity-80 transition-opacity animate-in fade-in slide-in-from-left-2 duration-500"
+                  <button
+                    className="inline-flex items-center gap-2 text-amber-800 cursor-pointer hover:opacity-80 transition-opacity animate-in fade-in slide-in-from-left-2 duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 rounded"
                     onClick={() => setExpandedSubtle(!expandedSubtle)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setExpandedSubtle(!expandedSubtle);
+                      }
+                    }}
+                    aria-expanded={expandedSubtle}
+                    aria-label="Expand warning details"
                   >
-                    <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                    <AlertTriangle className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                     <span className="text-xs">The content above may not fully comply with safety guidelines.</span>
-                    <button className="text-xs underline ml-1">Learn more</button>
-                    <ChevronDown className={`w-3 h-3 transition-transform ${expandedSubtle ? 'rotate-180' : ''}`} />
-                  </div>
+                    <span className="text-xs underline ml-1">Learn more</span>
+                    <ChevronDown className={`w-3 h-3 transition-transform ${expandedSubtle ? 'rotate-180' : ''}`} aria-hidden="true" />
+                  </button>
                   {expandedSubtle && (
                     <div className="ml-6 p-3 bg-chart-3/10 border border-chart-3/30 rounded-md text-xs text-amber-800 animate-in fade-in slide-in-from-left-2 duration-200">
                       <p className="mb-2">This content was flagged for the following reasons:</p>
@@ -69,8 +77,8 @@ export function InlineWarning() {
               {/* Idle State */}
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Idle State</p>
-                <div className="flex items-center gap-3 px-4 py-3 bg-chart-3/10 rounded-full animate-in fade-in slide-in-from-left-2 duration-500">
-                  <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" />
+                <div className="flex items-center gap-3 px-4 py-3 bg-chart-3/10 rounded-full animate-in fade-in slide-in-from-left-2 duration-500" role="alert">
+                  <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" aria-hidden="true" />
                   <div className="flex-1">
                     <p className="text-xs text-amber-800">This message contains content that may violate community guidelines.</p>
                   </div>
@@ -103,17 +111,25 @@ export function InlineWarning() {
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Expandable Version</p>
                 <div className="space-y-2">
-                  <div 
-                    className="flex items-center gap-3 px-4 py-3 pr-5 bg-chart-3/10 rounded-full cursor-pointer hover:bg-amber-100 hover:shadow-warning-hover transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                  <button
+                    className="flex items-center gap-3 px-4 py-3 pr-5 bg-chart-3/10 rounded-full cursor-pointer hover:bg-amber-100 hover:shadow-warning-hover transition-all animate-in fade-in slide-in-from-left-2 duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 w-full text-left"
                     onClick={() => setExpandedHighlighted(!expandedHighlighted)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setExpandedHighlighted(!expandedHighlighted);
+                      }
+                    }}
+                    aria-expanded={expandedHighlighted}
+                    aria-label="Expand warning details"
                   >
-                    <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" />
+                    <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" aria-hidden="true" />
                     <div className="flex-1">
                       <p className="text-xs text-amber-800">This message contains content that may violate community guidelines.</p>
-                      <button className="text-xs text-amber-800 underline mt-1">Learn more</button>
+                      <span className="text-xs text-amber-800 underline mt-1 block">Learn more</span>
                     </div>
-                    <ChevronDown className={`w-4 h-4 text-amber-800 transition-transform ${expandedHighlighted ? 'rotate-180' : ''}`} />
-                  </div>
+                    <ChevronDown className={`w-4 h-4 text-amber-800 transition-transform ${expandedHighlighted ? 'rotate-180' : ''}`} aria-hidden="true" />
+                  </button>
                   {expandedHighlighted && (
                     <div className="px-4 py-3 bg-chart-3/10/50 rounded-2xl text-xs text-amber-800 animate-in fade-in slide-in-from-left-2 duration-200">
                       <h6 style={{ fontSize: '12px', fontWeight: '500', marginBottom: '8px', fontFamily: 'Urbanist, sans-serif' }}>Why was this flagged?</h6>
@@ -199,15 +215,23 @@ export function InlineWarning() {
             />
           </div>
           <div className="space-y-2">
-            <div 
-              className="inline-flex items-center gap-2 text-amber-800 text-xs cursor-pointer hover:opacity-80 transition-opacity animate-in fade-in slide-in-from-left-2 duration-300"
+            <button
+              className="inline-flex items-center gap-2 text-amber-800 text-xs cursor-pointer hover:opacity-80 transition-opacity animate-in fade-in slide-in-from-left-2 duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 rounded"
               onClick={() => setExpandedExample3(!expandedExample3)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setExpandedExample3(!expandedExample3);
+                }
+              }}
+              aria-expanded={expandedExample3}
+              aria-label="Expand content review warning"
             >
-              <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+              <AlertTriangle className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
               <span>The content may need review before publishing.</span>
-              <button className="text-xs underline ml-1">Learn more</button>
-              <ChevronDown className={`w-3 h-3 transition-transform ${expandedExample3 ? 'rotate-180' : ''}`} />
-            </div>
+              <span className="text-xs underline ml-1">Learn more</span>
+              <ChevronDown className={`w-3 h-3 transition-transform ${expandedExample3 ? 'rotate-180' : ''}`} aria-hidden="true" />
+            </button>
             {expandedExample3 && (
               <div className="p-3 bg-chart-3/10/50 rounded-lg text-xs text-amber-800 animate-in fade-in slide-in-from-left-2 duration-200">
                 <p className="mb-2">This content was flagged for the following reasons:</p>
