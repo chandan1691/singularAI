@@ -519,6 +519,83 @@ export function MediumConfidenceTag() {
           </div>
         </div>
       </div>
+
+      {/* Example 5: Outlined Component Usage */}
+      <div className="bg-card rounded-lg border border-border p-6">
+        <div className="mb-3">
+          <h4 className="text-foreground">Example 5: Outlined Component in Card (Medium)</h4>
+        </div>
+        <div className="space-y-4">
+          <div className="p-4 bg-muted rounded-lg border border-border">
+            <div className="flex items-start justify-between mb-3">
+              <div className="flex-1">
+                <h5 className="text-foreground font-semibold mb-2">Article Analysis Result</h5>
+                <p className="text-muted-foreground text-sm">
+                  The AI model has analyzed this content and determined it has moderate confidence in the classification.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span 
+                className="inline-block rounded-full"
+                style={{ 
+                  background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                  padding: '2px'
+                }}
+              >
+                <span 
+                  className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                    borderRadius: '100px',
+                    background: 'rgba(255, 255, 255, 1)',
+                    backgroundImage: 'none',
+                    color: 'rgba(10, 10, 10, 1)',
+                    width: 'fit-content'
+                  }}
+                >
+                  <TrendingUp className="w-3.5 h-3.5" />
+                  Medium Confidence (68%)
+                </span>
+              </span>
+            </div>
+          </div>
+          <div className="p-4 bg-muted rounded-lg border border-border">
+            <div className="flex items-start justify-between mb-3">
+              <div className="flex-1">
+                <h5 className="text-foreground font-semibold mb-2">Search Result Match</h5>
+                <p className="text-muted-foreground text-sm">
+                  This result matches your query with moderate relevance. Consider reviewing for better accuracy.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span 
+                className="inline-block rounded-full"
+                style={{ 
+                  background: 'linear-gradient(145deg, rgba(255, 121, 53, 1) 0%, rgba(245, 165, 124, 1) 100%)',
+                  padding: '2px'
+                }}
+              >
+                <span 
+                  className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                    borderRadius: '100px',
+                    background: 'rgba(255, 255, 255, 1)',
+                    backgroundImage: 'none',
+                    color: 'rgba(10, 10, 10, 1)',
+                    width: 'fit-content'
+                  }}
+                >
+                  <TrendingUp className="w-3.5 h-3.5" />
+                  72% Match
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

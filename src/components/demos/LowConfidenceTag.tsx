@@ -415,10 +415,10 @@ export function LowConfidenceTag() {
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <span className="text-foreground">API Documentation</span>
             <span 
-              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-blue-800 border border-blue-400/50"
+              className="inline-flex items-center gap-1.5 px-2 py-2 rounded-full text-orange-900 border border-orange-400/50"
               style={{ 
-                background: 'linear-gradient(92.78deg, rgb(144, 163, 247) -0.01%, rgb(165, 182, 255) 99.98%)',
-                color: 'rgba(25, 60, 184, 1)'
+                background: 'linear-gradient(93.54deg, #FF7935 0.05%, #F5A57C 99.99%)',
+                border: '1px solid rgba(255, 121, 53, 0.5)'
               }}
             >
               <TrendingUp className="w-3.5 h-3.5" />
@@ -518,6 +518,83 @@ export function LowConfidenceTag() {
                 <span className="text-xs">Warning</span>
               </span>
               <span>This idiom may not translate well. Consider using a different phrase or providing context.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Example 5: Outlined Component Usage */}
+      <div className="bg-card rounded-lg border border-border p-6">
+        <div className="mb-3">
+          <h4 className="text-foreground">Example 5: Outlined Component in Card (Medium)</h4>
+        </div>
+        <div className="space-y-4">
+          <div className="p-4 bg-muted rounded-lg border border-border">
+            <div className="flex items-start justify-between mb-3">
+              <div className="flex-1">
+                <h5 className="text-foreground font-semibold mb-2">Content Analysis Result</h5>
+                <p className="text-muted-foreground text-sm">
+                  The AI model has analyzed this content and determined it has low confidence in the classification.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span 
+                className="inline-block rounded-full"
+                style={{ 
+                  background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                  padding: '2px'
+                }}
+              >
+                <span 
+                  className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                    borderRadius: '100px',
+                    background: 'rgba(255, 255, 255, 1)',
+                    backgroundImage: 'none',
+                    color: 'rgba(10, 10, 10, 1)',
+                    width: 'fit-content'
+                  }}
+                >
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  Low Confidence (48%)
+                </span>
+              </span>
+            </div>
+          </div>
+          <div className="p-4 bg-muted rounded-lg border border-border">
+            <div className="flex items-start justify-between mb-3">
+              <div className="flex-1">
+                <h5 className="text-foreground font-semibold mb-2">Search Result Match</h5>
+                <p className="text-muted-foreground text-sm">
+                  This result has low relevance to your query. Consider reviewing or refining your search terms.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span 
+                className="inline-block rounded-full"
+                style={{ 
+                  background: 'linear-gradient(145deg, rgba(255, 56, 121, 1) 0%, rgba(245, 126, 165, 1) 100%)',
+                  padding: '2px'
+                }}
+              >
+                <span 
+                  className="flex items-center gap-1.5 px-2 py-2 justify-center rounded-full bg-white"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                    borderRadius: '100px',
+                    background: 'rgba(255, 255, 255, 1)',
+                    backgroundImage: 'none',
+                    color: 'rgba(10, 10, 10, 1)',
+                    width: 'fit-content'
+                  }}
+                >
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  45% Match
+                </span>
+              </span>
             </div>
           </div>
         </div>

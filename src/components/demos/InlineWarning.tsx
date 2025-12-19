@@ -88,7 +88,7 @@ export function InlineWarning() {
               {/* Hover State */}
               <div className="bg-card p-4 rounded-lg border border-border">
                 <p className="text-muted-foreground mb-2 text-xs">Hover State</p>
-                <div className="flex items-center gap-3 px-4 py-3 bg-chart-3/10 rounded-full cursor-pointer transition-all hover:bg-amber-100 hover:shadow-warning-hover animate-in fade-in slide-in-from-left-2 duration-500">
+                <div className="flex items-center gap-3 px-4 py-3 bg-chart-3/10 rounded-full cursor-pointer transition-all hover:bg-amber-100 hover:shadow-warning-hover animate-in fade-in slide-in-from-left-2 duration-500 w-fit">
                   <AlertTriangle className="w-5 h-5 text-amber-800 flex-shrink-0" />
                   <div className="flex-1">
                     <p className="text-xs text-amber-800">This message contains content that may violate community guidelines.</p>
@@ -112,7 +112,7 @@ export function InlineWarning() {
                 <p className="text-muted-foreground mb-2 text-xs">Expandable Version</p>
                 <div className="space-y-2">
                   <button
-                    className="flex items-center gap-3 px-4 py-3 pr-5 bg-chart-3/10 rounded-full cursor-pointer hover:bg-amber-100 hover:shadow-warning-hover transition-all animate-in fade-in slide-in-from-left-2 duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 w-full text-left"
+                    className="flex items-center justify-center gap-3 px-4 py-3 pr-4 bg-chart-3/10 rounded-full cursor-pointer hover:bg-amber-100 hover:shadow-warning-hover transition-all animate-in fade-in slide-in-from-left-2 duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 w-fit text-left"
                     onClick={() => setExpandedHighlighted(!expandedHighlighted)}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter' || e.key === ' ') {

@@ -301,7 +301,7 @@ export function SafetyIcon() {
               {/* Pulsing Outline */}
               <div className="space-y-3">
                 <p className="text-xs text-muted-foreground">Pulsing (24px)</p>
-                <div className="p-4 bg-card rounded-full border border-border">
+                <div className="p-4 bg-card rounded-full border border-border" style={{ width: 'fit-content', height: 'fit-content' }}>
                   <Shield className="w-6 h-6 text-blue-600 animate-pulse" />
                 </div>
               </div>
@@ -320,7 +320,7 @@ export function SafetyIcon() {
               {/* Scanning Animation */}
               <div className="space-y-3">
                 <p className="text-xs text-muted-foreground">Scan Ring (24px)</p>
-                <div className="p-4 bg-card rounded-full border border-border">
+                <div className="p-4 bg-card rounded-full border border-border" style={{ width: 'fit-content', height: 'fit-content' }}>
                   <div className="relative inline-block">
                     <Shield className="w-6 h-6 text-blue-600" />
                     <div className="absolute inset-0 border-2 border-blue-400 rounded-full animate-ping"></div>
