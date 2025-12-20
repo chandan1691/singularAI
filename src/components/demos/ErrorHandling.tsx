@@ -37,7 +37,7 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Default</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           background: 'var(--destructive)',
                           boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -58,7 +58,7 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Hover</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           background: 'var(--destructive)',
                           boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)'
@@ -73,7 +73,7 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Pressed</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           background: 'var(--destructive)',
                           boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.1)'
@@ -89,7 +89,7 @@ export function ErrorHandling() {
                       <p className="text-muted-foreground text-xs">Disabled</p>
                       <button 
                         disabled 
-                        className="inline-flex items-center gap-2 px-3 h-10 text-white rounded-full cursor-not-allowed opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center gap-2 px-4 h-10 text-white rounded-full cursor-not-allowed opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           background: 'var(--destructive)',
                           boxShadow: 'none'
@@ -104,7 +104,7 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Loading</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           background: 'var(--destructive)',
                           boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -133,7 +133,7 @@ export function ErrorHandling() {
                         }}
                       >
                         <button 
-                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                          className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                           style={{
                             background: 'var(--destructive) / 0.1',
                             color: 'var(--destructive)'
@@ -155,7 +155,7 @@ export function ErrorHandling() {
                         }}
                       >
                         <button 
-                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                          className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                           style={{
                             background: 'var(--destructive) / 0.1',
                             color: 'var(--destructive)'
@@ -177,7 +177,7 @@ export function ErrorHandling() {
                         }}
                       >
                         <button 
-                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                          className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                           style={{
                             background: 'linear-gradient(93.66deg, #FFEFEF -0.01%, #FFF5F5 100.21%)',
                             color: '#B83838'
@@ -222,7 +222,7 @@ export function ErrorHandling() {
                         }}
                       >
                         <button 
-                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                          className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                           style={{
                             background: 'var(--destructive) / 0.1',
                             color: 'var(--destructive)'
@@ -246,7 +246,7 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Default</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 bg-transparent rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 bg-transparent rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{ color: '#DC4848' }}
                         onMouseEnter={(e) => {
                           e.currentTarget.style.backgroundColor = '#FFF5F5';
@@ -255,8 +255,8 @@ export function ErrorHandling() {
                           e.currentTarget.style.backgroundColor = 'transparent';
                         }}
                       >
-                        <X className="w-4 h-4" />
                         <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
 
@@ -264,14 +264,14 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Hover</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           backgroundColor: '#FFF5F5',
                           color: '#DC4848'
                         }}
                       >
-                        <X className="w-4 h-4" />
                         <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
 
@@ -279,14 +279,14 @@ export function ErrorHandling() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Pressed</p>
                       <button 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           backgroundColor: '#FFEBEB',
                           color: '#B83838'
                         }}
                       >
-                        <X className="w-4 h-4" />
                         <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
 
@@ -295,13 +295,13 @@ export function ErrorHandling() {
                       <p className="text-muted-foreground text-xs">Disabled</p>
                       <button 
                         disabled 
-                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 bg-transparent rounded-full cursor-not-allowed opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500"
+                        className="inline-flex items-center justify-center gap-2 h-10 px-4 bg-transparent rounded-full cursor-not-allowed opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500"
                         style={{
                           color: '#DC4848'
                         }}
                       >
-                        <X className="w-4 h-4" />
                         <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
                   </div>
@@ -415,7 +415,7 @@ export function ErrorHandling() {
                             <p className="text-xs text-muted-foreground">Refine your input or try again.</p>
                           </div>
                           <button 
-                            className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all"
+                            className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all"
                             style={{
                               background: 'var(--destructive)',
                               boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -449,7 +449,7 @@ export function ErrorHandling() {
                             <p className="text-xs text-muted-foreground">Refine your input or try again.</p>
                           </div>
                           <button 
-                            className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all"
+                            className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all"
                             style={{
                               background: 'var(--destructive)',
                               boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -522,7 +522,7 @@ export function ErrorHandling() {
                           </div>
                           <div className="flex flex-wrap gap-2">
                             <button 
-                              className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all"
+                              className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all"
                               style={{
                                 background: 'var(--destructive)',
                                 boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -544,7 +544,7 @@ export function ErrorHandling() {
                               }}
                             >
                               <button 
-                                className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                                className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                                 style={{
                                   background: 'linear-gradient(93.66deg, #FFEFEF -0.01%, #FFF5F5 100.21%)',
                                   color: '#DC4848'
@@ -574,7 +574,7 @@ export function ErrorHandling() {
                           </div>
                           <div className="flex flex-wrap gap-2">
                             <button 
-                              className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full transition-all"
+                              className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full transition-all"
                               style={{
                                 background: 'var(--destructive)',
                                 boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -596,7 +596,7 @@ export function ErrorHandling() {
                               }}
                             >
                               <button 
-                                className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                                className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                                 style={{
                                   background: 'linear-gradient(93.66deg, #FFEFEF -0.01%, #FFF5F5 100.21%)',
                                   color: '#DC4848'
@@ -648,7 +648,7 @@ export function ErrorHandling() {
                 <button 
                   onClick={() => handleRetry('primary')}
                   disabled={loadingPrimary}
-                  className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full disabled:opacity-50 transition-all"
+                  className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full disabled:opacity-50 transition-all"
                   style={{
                     background: 'var(--destructive)',
                     boxShadow: loadingPrimary ? 'none' : '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -668,7 +668,7 @@ export function ErrorHandling() {
                   <span className="text-sm">{loadingPrimary ? 'Retrying...' : 'Try Again'}</span>
                 </button>
                 <button 
-                  className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 bg-transparent rounded-full transition-all"
+                  className="inline-flex items-center justify-center gap-2 h-10 px-4 bg-transparent rounded-full transition-all"
                   style={{ color: '#DC4848' }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#FFF5F5';
@@ -727,7 +727,7 @@ export function ErrorHandling() {
                 <button 
                   onClick={() => handleRetry('secondary')}
                   disabled={loadingSecondary}
-                  className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-white rounded-full disabled:opacity-50 transition-all"
+                  className="inline-flex items-center justify-center gap-2 h-10 px-4 text-white rounded-full disabled:opacity-50 transition-all"
                   style={{
                     background: 'var(--destructive)',
                     boxShadow: loadingSecondary ? 'none' : '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
@@ -792,7 +792,7 @@ export function ErrorHandling() {
                     }}
                   >
                     <button 
-                      className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                      className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                       style={{
                         background: 'linear-gradient(93.66deg, #FFEFEF -0.01%, #FFF5F5 100.21%)',
                         color: '#DC4848'
@@ -808,7 +808,7 @@ export function ErrorHandling() {
                     }}
                   >
                     <button 
-                      className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all"
+                      className="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all"
                       style={{
                         background: 'linear-gradient(93.66deg, #FFEFEF -0.01%, #FFF5F5 100.21%)',
                         color: '#DC4848'

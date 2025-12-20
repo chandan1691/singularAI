@@ -39,7 +39,7 @@ export function FallbackMessageCard() {
                             <p className="text-xs text-muted-foreground">Refine your input or try again.</p>
                           </div>
                           <button 
-                            className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
+                            className="inline-flex items-center gap-2 px-4 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
                             style={{
                               boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                             }}
@@ -72,7 +72,7 @@ export function FallbackMessageCard() {
                             <p className="text-xs text-muted-foreground">Refine your input or try again.</p>
                           </div>
                           <button 
-                            className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
+                            className="inline-flex items-center gap-2 px-4 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
                             style={{
                               boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                             }}
@@ -144,7 +144,7 @@ export function FallbackMessageCard() {
                           </div>
                           <div className="flex flex-wrap gap-2">
                             <button 
-                              className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
+                              className="inline-flex items-center gap-2 px-4 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
                               style={{
                                 boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                               }}
@@ -162,7 +162,7 @@ export function FallbackMessageCard() {
                               className="inline-flex rounded-full p-[1px] transition-all bg-destructive"
                             >
                               <button 
-                                className="inline-flex items-center gap-2 px-3 h-10 rounded-full transition-all bg-destructive/10 text-destructive"
+                                className="inline-flex items-center gap-2 px-4 h-10 rounded-full transition-all bg-destructive/10 text-destructive"
                               >
                                 <span className="text-sm">Use Manual Mode</span>
                               </button>
@@ -188,7 +188,7 @@ export function FallbackMessageCard() {
                           </div>
                           <div className="flex flex-wrap gap-2">
                             <button 
-                              className="inline-flex items-center gap-2 px-3 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
+                              className="inline-flex items-center gap-2 px-4 h-10 text-destructive-foreground rounded-full transition-all bg-destructive"
                               style={{
                                 boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
                               }}
@@ -206,7 +206,7 @@ export function FallbackMessageCard() {
                               className="inline-flex rounded-full p-[1px] transition-all bg-destructive"
                             >
                               <button 
-                                className="inline-flex items-center gap-2 px-3 h-10 rounded-full transition-all bg-destructive/10 text-destructive"
+                                className="inline-flex items-center gap-2 px-4 h-10 rounded-full transition-all bg-destructive/10 text-destructive"
                               >
                                 <span className="text-sm">Use Manual Mode</span>
                               </button>
