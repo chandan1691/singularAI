@@ -33,13 +33,14 @@ export function ErrorButton() {
                       <button 
                         className="flex items-center justify-center gap-2 h-10 px-4 text-primary-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-primary w-fit"
                         style={{
-                          boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.boxShadow = '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.boxShadow = '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)';
+                          paddingLeft: '16px',
+                          paddingRight: '16px',
+                          color: 'rgba(10, 10, 10, 1)',
+                          backgroundColor: 'var(--color-blue-200)',
+                          borderColor: 'var(--color-blue-300)',
+                          borderStyle: 'solid',
+                          borderWidth: '1px',
+                          boxShadow: 'none'
                         }}
                       >
                         <RefreshCw className="w-4 h-4" />
@@ -53,7 +54,10 @@ export function ErrorButton() {
                       <button 
                         className="flex items-center justify-center gap-2 h-10 px-4 text-destructive-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive w-fit"
                         style={{
-                          boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)'
+                          boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)',
+                          borderImage: 'none',
+                          borderStyle: 'solid',
+                          borderWidth: '1px'
                         }}
                       >
                         <RefreshCw className="w-4 h-4" />
@@ -67,7 +71,10 @@ export function ErrorButton() {
                       <button 
                         className="flex items-center justify-center gap-2 h-10 px-4 text-destructive-foreground rounded-full transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive w-fit"
                         style={{
-                          boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.1)'
+                          boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.1)',
+                          borderImage: 'none',
+                          borderStyle: 'solid',
+                          borderWidth: '1px'
                         }}
                       >
                         <RefreshCw className="w-4 h-4" />
@@ -116,7 +123,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Default</p>
                       <div 
-                        className="inline-flex rounded-full p-[1px] transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
                       >
                         <button 
                           className="flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all bg-destructive/10 text-destructive w-fit"
@@ -131,7 +138,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Hover</p>
                       <div 
-                        className="inline-flex rounded-full p-[1px] transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
                       >
                         <button 
                           className="flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all bg-destructive/10 text-destructive w-fit"
@@ -146,7 +153,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Pressed</p>
                       <div 
-                        className="inline-flex rounded-full p-[1px] transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
                       >
                         <button 
                           className="flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all w-fit"
@@ -165,7 +172,12 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Disabled</p>
                       <div 
-                        className="inline-flex rounded-full p-[1px] opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        style={{
+                          gap: '0px',
+                          paddingLeft: '16px',
+                          paddingRight: '16px'
+                        }}
                       >
                         <button 
                           disabled 
@@ -181,7 +193,7 @@ export function ErrorButton() {
                     <div className="flex flex-col items-center gap-3">
                       <p className="text-muted-foreground text-xs">Loading</p>
                       <div 
-                        className="inline-flex rounded-full p-[1px] transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 transition-all animate-in fade-in slide-in-from-left-2 duration-500 bg-destructive"
                       >
                         <button 
                           className="flex items-center justify-center gap-2 h-10 px-4 rounded-full transition-all bg-destructive/10 text-destructive w-fit"
@@ -255,6 +267,180 @@ export function ErrorButton() {
                         className="flex items-center justify-center gap-2 h-10 px-4 bg-transparent rounded-full cursor-not-allowed opacity-50 transition-all animate-in fade-in slide-in-from-left-2 duration-500 w-fit"
                         style={{
                           color: 'var(--destructive)'
+                        }}
+                      >
+                        <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Size Variations */}
+          <div className="mt-12 pt-12 border-t border-border">
+            <p className="text-muted-foreground mb-4">Size Variations</p>
+            <p className="text-xs text-gray-400 mb-6">Available sizes: Small, Medium, Large</p>
+            
+            <div className="space-y-8">
+              {/* Primary Retry Sizes */}
+              <div>
+                <p className="text-xs text-muted-foreground mb-4">Primary Retry</p>
+                <div className="bg-card p-6 rounded-lg border border-border">
+                  <div className="flex flex-wrap items-end gap-6">
+                    {/* Small */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Small</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-1.5 h-10 pl-4 pr-4 text-primary-foreground rounded-full transition-all bg-primary"
+                        style={{
+                          boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.07), 0px 2px 4px rgba(0, 0, 0, 0.06)'
+                        }}
+                      >
+                        <RefreshCw className="w-4 h-4" />
+                        <span className="text-sm">Retry</span>
+                      </button>
+                    </div>
+
+                    {/* Medium */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Medium</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-primary-foreground rounded-full transition-all bg-primary"
+                        style={{
+                          boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.08)'
+                        }}
+                      >
+                        <RefreshCw className="w-4 h-4" />
+                        <span className="text-sm">Retry</span>
+                      </button>
+                    </div>
+
+                    {/* Large */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Large</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 text-primary-foreground rounded-full transition-all bg-primary"
+                        style={{
+                          boxShadow: '0px 10px 10px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1)'
+                        }}
+                      >
+                        <RefreshCw className="w-4 h-4" />
+                        <span className="text-sm">Retry</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Secondary Retry Sizes */}
+              <div>
+                <p className="text-xs text-muted-foreground mb-4">Secondary Retry</p>
+                <div className="bg-card p-6 rounded-lg border border-border">
+                  <div className="flex flex-wrap items-end gap-6">
+                    {/* Small */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Small</p>
+                      <div 
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 bg-destructive"
+                      >
+                        <button 
+                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all bg-destructive/10 text-destructive"
+                        >
+                          <RefreshCw className="w-4 h-4" />
+                          <span className="text-sm">Retry</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Medium */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Medium</p>
+                      <div 
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 bg-destructive"
+                      >
+                        <button 
+                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all bg-destructive/10 text-destructive"
+                        >
+                          <RefreshCw className="w-4 h-4" />
+                          <span className="text-sm">Retry</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Large */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Large</p>
+                      <div 
+                        className="inline-flex rounded-full px-4 py-[1px] gap-0 bg-destructive"
+                      >
+                        <button 
+                          className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 rounded-full transition-all bg-destructive/10 text-destructive"
+                        >
+                          <RefreshCw className="w-4 h-4" />
+                          <span className="text-sm">Retry</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dismiss Sizes */}
+              <div>
+                <p className="text-xs text-muted-foreground mb-4">Dismiss</p>
+                <div className="bg-card p-6 rounded-lg border border-border">
+                  <div className="flex flex-wrap items-end gap-6">
+                    {/* Small */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Small</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-1.5 h-10 pl-4 pr-4 bg-transparent rounded-full transition-all text-destructive"
+                        style={{
+                          paddingLeft: '16px',
+                          paddingRight: '16px'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#FFF5F5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
+                        }}
+                      >
+                        <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+
+                    {/* Medium */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Medium</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 bg-transparent rounded-full transition-all text-destructive"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#FFF5F5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
+                        }}
+                      >
+                        <span className="text-sm">Dismiss</span>
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+
+                    {/* Large */}
+                    <div className="flex flex-col items-center gap-3">
+                      <p className="text-muted-foreground text-xs">Large</p>
+                      <button 
+                        className="inline-flex items-center justify-center gap-2 h-10 pl-4 pr-4 bg-transparent rounded-full transition-all text-destructive"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.backgroundColor = '#FFF5F5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.backgroundColor = 'transparent';
                         }}
                       >
                         <span className="text-sm">Dismiss</span>
@@ -362,7 +548,7 @@ export function ErrorButton() {
                   <span className="text-sm">Retry Connection</span>
                 </button>
                 <div 
-                  className="inline-flex rounded-full p-[1px] transition-all"
+                  className="inline-flex rounded-full px-4 py-[1px] gap-0 transition-all"
                   style={{
                     background: 'var(--destructive)'
                   }}
